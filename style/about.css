@@ -14,12 +14,13 @@ header {
 	height: 20em;
 	overflow: hidden;
 }
-.paragraph h2 {
-	font-size: 5em;
+h2 {
+	font-size: 2em;
 }
-.paragraph img {
-	width: 25%;
-	height: 25%;
+
+main img {
+	width: 80%;
+	height: 80%;
 }
 
 /*  SECTIONS  */
