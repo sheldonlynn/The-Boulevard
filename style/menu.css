@@ -45,3 +45,25 @@
 		width: 100%;
 	}
 }
+main {
+    position: relative;
+}
+#wrapper img1 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#wrapper img2 {
+    position: absolute;
+    top: 30%;
+    right: 0px;
+}
+#wrapper img3 {
+    position: absolute;
+    top: 60%;
+    right: 0px;
+}
+
+h2 {
+	font-size: 2em;
+}
