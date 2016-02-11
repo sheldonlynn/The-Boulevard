@@ -1,3 +1,35 @@
+#menu-items {
+	margin-right: 200px;
+}
+
+#menu-items table {
+	width: 100%;
+}
+
+#menu-items td:last-child {
+	text-align: right;
+}
+
+#menu-img {
+	width: 200px;
+	overflow: hidden;
+}
+
+#menu-img table {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-collapse: collapse;
+}
+
+main {
+	min-height: 800px;
+}
+
+h2 {
+	font-size: 2em;
+}
+
 /* RESPONSIVE GRID CODE */
 /*  SECTIONS  */
 .section {
@@ -12,58 +44,38 @@
 	float:left;
 	margin: 1% 0 1% 1.6%;
 }
-.col:first-child {
-	margin-left: 0;
-}
+.col:first-child { margin-left: 0; }
 
 /*  GROUPING  */
-.group:before, .group:after {
-	content:"";
-	display:table; 
-}
-.group:after {
-	clear:both;
-}
-
-/*  GRID OF THREE  */
-.span_3_of_3 {
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.span_2_of_2 {
 	width: 100%;
 }
-.span_2_of_3 {
-	width: 66.13%;
-}
-.span_1_of_3 {
-	width: 32.26%;
+.span_1_of_2 {
+	width: 49.2%;
 }
 
-/*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 480px) {
-	.col {
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 530px) {
+	.col { 
 		margin: 1% 0 1% 0%;
 	}
-	.span_3_of_3, .span_2_of_3, .span_1_of_3 {
+	.span_2_of_2, .span_1_of_2 {
 		width: 100%;
 	}
 }
-main {
-    position: relative;
-}
-#wrapper img1 {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-}
-#wrapper img2 {
-    position: absolute;
-    top: 30%;
-    right: 0px;
-}
-#wrapper img3 {
-    position: absolute;
-    top: 60%;
-    right: 0px;
-}
 
-h2 {
-	font-size: 2em;
+@media only screen and (max-width: 750px) {
+	#menu-img {
+		display: none;
+	}
+	
+	#menu-items {
+		margin: 0;
+	}
 }
