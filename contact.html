@@ -22,7 +22,7 @@
 		</div>
 		
 		<div id="hours">
-			<table border="1">
+			<table>
 				<thead>
 					<tr>
 						<th colspan="2">Store Hours</th>
@@ -65,24 +65,32 @@
 	
 	<div id="wrapper">
 		<header>
-			<div id = "contactHeader">
-			<h1>THE BOULEVARD</h1>
-			</div>
-
+			<div id="bg-header-cont"></div>
+			<h1>Visit Us</h1>
 		</header>
 		<main>
 
+			<div class="contentsection">
 				<div class="maincontent">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer iaculis tortor eu lorem ultricies mattis. Nunc sit amet malesuada augue. In dignissim mattis nisi, facilisis posuere lectus laoreet ac. Duis pellentesque rhoncus nunc. Vestibulum aliquet ligula mauris, vel ullamcorper ligula faucibus a. Sed id maximus est, sed dapibus urna. Nulla eu rhoncus diam. Donec pulvinar est ut augue malesuada luctus. Pellentesque maximus odio vel tincidunt venenatis. Aenean placerat purus sapien, ut ullamcorper felis bibendum et. Nunc fringilla vehicula libero sed blandit. Pellentesque eros urna, condimentum tempor finibus vitae, condimentum id dolor. Cras vehicula convallis neque, id pulvinar ipsum feugiat eu. Etiam et lacus justo. Sed et varius ex, vel posuere felis.
+					<h2> Location </h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer iaculis tortor eu lorem ultricies mattis. Nunc sit amet malesuada augue. In dignissim mattis nisi, facilisis posuere lectus laoreet ac. Duis pellentesque rhoncus nunc. Vestibulum aliquet ligula mauris, vel ullamcorper ligula faucibus a. Sed id maximus est, sed dapibus urna. Nulla eu rhoncus diam. </p>
+					<h2> Hours </h2>
+					<p>Donec pulvinar est ut augue malesuada luctus. Pellentesque maximus odio vel tincidunt venenatis. Aenean placerat purus sapien, ut ullamcorper felis bibendum et. Nunc fringilla vehicula libero sed blandit. Pellentesque eros urna, condimentum tempor finibus vitae, condimentum id dolor. Cras vehicula convallis neque, id pulvinar ipsum feugiat eu. Etiam et lacus justo. Sed et varius ex, vel posuere felis.</p>
+					<h2> Contact </h2>
+					<p>Lorem shlorem sit amet. Nunc sit amet malesuada augue. Integer ultricies mattis.  </p>
+					
 				</div>
 				<div class="maincontent">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer iaculis tortor eu lorem ultricies mattis. Nunc sit amet malesuada augue. In dignissim mattis nisi, facilisis posuere lectus laoreet ac. Duis pellentesque rhoncus nunc. Vestibulum aliquet ligula mauris, vel ullamcorper ligula faucibus a. Sed id maximus est, sed dapibus urna. Nulla eu rhoncus diam. Donec pulvinar est ut augue malesuada luctus. Pellentesque maximus odio vel tincidunt venenatis. Aenean placerat purus sapien, ut ullamcorper felis bibendum et. Nunc fringilla vehicula libero sed blandit. Pellentesque eros urna, condimentum tempor finibus vitae, condimentum id dolor. Cras vehicula convallis neque, id pulvinar ipsum feugiat eu. Etiam et lacus justo. Sed et varius ex, vel posuere felis.
+					<div id ="googleMap">
+					
+					</div>
 				</div>
-				<div class="maincontent">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer iaculis tortor eu lorem ultricies mattis. Nunc sit amet malesuada augue. In dignissim mattis nisi, facilisis posuere lectus laoreet ac. Duis pellentesque rhoncus nunc. Vestibulum aliquet ligula mauris, vel ullamcorper ligula faucibus a. Sed id maximus est, sed dapibus urna. Nulla eu rhoncus diam. Donec pulvinar est ut augue malesuada luctus. Pellentesque maximus odio vel tincidunt venenatis. Aenean placerat purus sapien, ut ullamcorper felis bibendum et. Nunc fringilla vehicula libero sed blandit. Pellentesque eros urna, condimentum tempor finibus vitae, condimentum id dolor. Cras vehicula convallis neque, id pulvinar ipsum feugiat eu. Etiam et lacus justo. Sed et varius ex, vel posuere felis.
+				<div id="input">
+				<h2> Questions/Comments </h2>
+					<p>Text field here</p>
 				</div>
-
-
+				
+			</div>
 
 		</main>
 	
@@ -113,3 +121,22 @@
 	</div>
 </body>
 </html>
+
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+function initialize() {
+	var mapProp = {
+	center:new google.maps.LatLng(49.2660307, -123.2467108),
+	zoom: 15,
+	mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);	
+/*
+var marker = new google.maps.Marker({
+position: {lat: 49.2660307, lng: -123.2467108),
+map: googleMap,
+title: 'Hello'
+});*/
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
