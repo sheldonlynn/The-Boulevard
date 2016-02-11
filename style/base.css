@@ -33,6 +33,14 @@
 }
 /* END OF NAV SECTION */
 
+#contact {
+	float: left;
+}
+
+#sitemap {
+	float: right;
+}
+
 /* HTML TAG SECTION */
 
 body {
@@ -89,8 +97,16 @@ main {
 
 /* FOOTER SECTION */
 footer {
+	overflow: hidden;
+	position: relative;
 	padding: .5em 1em .5em 1em;
 	bottom: 0;
 	background-color: #737373;
+}
+
+footer td {
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 /* END FOOTER SECTION */
