@@ -86,7 +86,12 @@
 			
 			<div id="input">
 				<h2> Questions/Comments </h2>
-				<p>Text field here</p>
+					<form>
+						Name:<br>
+						<imput type="text" name="firstname"><br>
+						Email:<br>
+						<input type="text" name="lastname">
+					</form>
 			</div>
 		</main>
 			
@@ -118,21 +123,3 @@
 </body>
 </html>
 
-<script src="http://maps.googleapis.com/maps/api/js"></script>
-<script>
-function initialize() {
-	var mapProp = {
-	center:new google.maps.LatLng(49.2660307, -123.2467108),
-	zoom: 15,
-	mapTypeId: google.maps.MapTypeId.ROADMAP
-	};
-var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);	
-/*
-var marker = new google.maps.Marker({
-position: {lat: 49.2660307, lng: -123.2467108),
-map: googleMap,
-title: 'Hello'
-});*/
-}
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
