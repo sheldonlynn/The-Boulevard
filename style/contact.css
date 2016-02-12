@@ -1,14 +1,4 @@
 /*CSS stylesheet */
-
-#bg-header-cont {
-	background-image: url(../images/cafe.jpg);
-	background-position: center bottom;
-	background-size: cover;
-	top: 0;
-	width: 100%;
-	height: 100%;
-}
-
 #input{
 	padding-top: 10px;
 	clear:both;
@@ -26,14 +16,6 @@
 	width: 48%;
 	height: 20em;
 	background-color: #000;
-}
-
-header {
-	position: relative;
-	color: #FFFFFF;
-	text-align: center;
-	height: 20em;
-	overflow: hidden;
 }
 
 h2{
