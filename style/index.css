@@ -15,6 +15,12 @@ header {
 	overflow: hidden;
 }
 
+.photo {
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+
 /* RESPONSIVE GRID CODE */
 /*  SECTIONS  */
 .section {
