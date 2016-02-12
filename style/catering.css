@@ -79,3 +79,6 @@ h2 {
 		margin: 0;
 	}
 }
+body {
+	min-width: 480px;
+}
