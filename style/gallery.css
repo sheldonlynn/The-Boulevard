@@ -19,7 +19,7 @@ header {
 	overflow: hidden;
 }
 
-img {
+.col img {
 	width: 100%;
 	height: auto;
 }
