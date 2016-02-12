@@ -7,6 +7,10 @@
 	height: 100%;
 }
 
+h2 {
+	font-size: 3em;
+}
+
 header {
 	position: relative;
 	color: #FFFFFF;
@@ -15,15 +19,13 @@ header {
 	overflow: hidden;
 }
 
-table tr td {
-	width: 33%;
-	padding: 0;
-}
-
 img {
 	width: 100%;
 	height: auto;
-	bottom: 0;
+}
+
+#top_right_pic {
+	padding: 2%;
 }
 
 /* RESPONSIVE GRID CODE */
