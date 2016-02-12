@@ -9,6 +9,25 @@
 	height: 100%;
 }
 
+#input{
+	padding-top: 10px;
+	clear:both;
+}
+
+#contact-info {
+	float: left;
+	width: 50%;
+	margin-right: 20px;
+}
+
+#map {
+	float: left;
+	margin-top: 1em;
+	width: 48%;
+	height: 20em;
+	background-color: #000;
+}
+
 header {
 	position: relative;
 	color: #FFFFFF;
@@ -18,65 +37,6 @@ header {
 }
 
 h2{
+	font-size: 1.5em;
 	text-align:center;
 }
-
-#input{
-	padding-top: 10px;
-	clear:both;
-}
-
-#googleMap{
-	width:500px;
-	height:380px;
-}
-
-/*  SECTIONS  */
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
-}
-
-/*  COLUMN SETUP  */
-.col {
-	display: block;
-	float:left;
-	margin: 1% 0 1% 1.6%;
-}
-.col:first-child {
-	margin-left: 0;
-}
-
-/*  GROUPING  */
-.group:before, .group:after {
-	content:"";
-	display:table;
-}
-.group:after {
-	clear:both;
-}
-
-/*  GRID OF TWO  */
-.span_2_of_2 {
-	width: 100%;
-}
-.span_1_of_2 {
-	width: 49.2%;
-}
-
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
-@media only screen and (max-width: 480px) {
-	.col { 
-		margin: 1% 0 1% 0%;
-	}
-}
-
-@media only screen and (max-width: 480px) {
-	.span_2_of_2, .span_1_of_2 {
-		width: 100%;
-	}
-}
-
-
