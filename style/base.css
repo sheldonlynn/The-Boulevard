@@ -162,7 +162,7 @@ footer td {
 
 @media only screen and (max-width: 500px) {
 	nav, #social, #logo, #navbar {
-		width: 0px;
+		display: none;
 	}
 	
 	#wrapper {
