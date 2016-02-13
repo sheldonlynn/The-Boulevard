@@ -55,6 +55,12 @@
 	padding-top: 2em;
 }
 
+#logo-mobile {
+	display: none;
+	width: 0;
+	height: 0;
+}
+
 #social {
 	display: flex;
 	justify-content: space-between;
@@ -65,20 +71,33 @@
 
 /* END OF NAV SECTION */
 
-#contact {
-	float: left;
+/* FOOTER SECTION */
+#hours td {
+	padding-left: 5px;
 }
 
-#sitemap {
-	float: right;
+#sitemap td {
+	padding-left: 5px;
 }
+#mobile-hours {
+		display: none;
+}
+/* END FOOTER SECTION */
+	
 
 /* HTML TAG SECTION */
 
 body {
 	font-family: "Raleway", sans-serif;
 	font-weight: 300;
+	color: #6A5750;
 	background-color: #49412C;
+	min-width: 300px;
+}
+
+a {
+	color: #6A5750;
+	font-weight: 700;
 }
 
 /* HEADER SECTION */
@@ -104,24 +123,9 @@ h1 {
 
 /* NAV SECTION */
 nav {
-	display: inline-block;
 	width: 150px;
 	position: fixed;
 	background-color: #49412C;
-}
-
-nav thead {
-	text-align: center;
-}
-
-nav table {
-	color: #CAA869;
-	margin: auto;
-	font-size: 0.9em;
-}
-
-nav td {
-	font-size: .8em;
 }
 
 /* END NAV SECTION */
@@ -129,7 +133,6 @@ nav td {
 main {
 	padding: .5em 1em .5em 1em;
 	background-color: #f9f0df; /* #4D4D4D; */
-	color: #6a5750;
 }
 
 /* FOOTER SECTION */
@@ -139,7 +142,11 @@ footer {
 	padding: .5em 1em .5em 1em;
 	bottom: 0;
 	background-color: #e8dbc6;
-	color: #6a5750;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 0.8em;
 }
 
 footer td {
@@ -149,12 +156,87 @@ footer td {
 }
 /* END FOOTER SECTION */
 
-@media only screen and (max-width: 500px) {
-	nav, #social, #logo, #navbar {
+/* HIDE HOURS TABLE IN FOOTER ON SMALLER SCREEN */
+@media only screen and (max-width: 1000px) {
+	#hours {
+		display: none;
+	}
+}
+
+/* DON'T DISPLAY MOBILE FOOTER ITEMS ON LARGE SCREEN */
+@media only screen and (min-width: 768px) {
+	#sitemap-link {
+		display: none;
+	}
+	#mobile-social {
+		display: none;
+	}
+}
+
+/* PHONE */
+@media only screen and (max-width: 768px) {
+	#wrapper {
+		margin-left: 0;
+	}
+	
+	header {
+		margin-top: 50px;
+	}
+	
+	nav {
+		margin: 0;
+		top: 0;
+		height: 50px;
+		width: 100%;
+		z-index: 1;
+	}
+	
+	#logo {
 		display: none;
 	}
 	
-	#wrapper {
-		margin-left: 0;
+	#navbar {
+		width: 100%;
+	}
+	
+	#navbar ul {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+	
+	#navbar li {
+		float: left;
+	}
+	
+	#navbar li a{
+		border-bottom: 0;
+	}
+	
+	#navbar a:hover {
+		border-bottom: 0;
+	}
+	
+	#social {
+		display: none;
+	}
+	
+	#mobile-hours {
+		display: none;
+	}
+	#sitemap {
+		display: none;
+	}
+	footer {
+		justify-content: space-around;
+		text-align: center;
+		font-size: 1em;
+	}
+	#mobile-social img{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#social {
+		display: none;
 	}
 }
