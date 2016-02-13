@@ -2,9 +2,22 @@ h2 {
 	font-size: 2em;
 }
 
-main img {
-	width: 80%;
-	height: 80%;
+.img-container {
+	background-image: url(../images/latte.jpg);
+	background-position: 50% 50%;
+	background-size: cover;
+	display: flex;
+	width: auto;
+	height: 250px;
+}
+
+#bg-header {
+	background-image: url(../images/headercafe.jpg);
+	background-position: center bottom;
+	background-size: cover;
+	top: 0;
+	width: 100%;
+	height: 100%;
 }
 
 /*  SECTIONS  */
