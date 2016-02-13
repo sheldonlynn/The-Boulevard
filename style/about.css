@@ -11,6 +11,14 @@ h2 {
 	height: 250px;
 }
 
+#bg-header {
+	background-image: url(../images/headercafe.jpg);
+	background-position: center bottom;
+	background-size: cover;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
 
 /*  SECTIONS  */
 .section {
