@@ -73,7 +73,7 @@
 				<div class="section group">
 					<div class="col span_1_of_2">
 						<h2>Sign Up</h2>
-							<form>
+							<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
 							E-mail<br>
 							<input type="text" name="email" size="30"><br>
 							First Name<br>
@@ -91,22 +91,37 @@
 							Re-enter password<br>
 							<input type="password" name="password" size="11">
 							<br><br>
-							<button type="submit" form="infoForm" value="Submit">Submit</button>
+							<input type="submit" value="Submit">
 							</form>
-						</div>
-						<div class="col span_1_of_2">
-							<h2>Log-in</h2>
-								<form>
-								E-mail<br>
-								<input type="text" name="email" size="30"><br>
-								Password<br>
-								<input type="password" name="password">
-								<br>
-								<br>
-								<button type="submit" form="nameform" value="Submit">Submit</button>
-								</form>
-						</div>
+					</div>
+					<div class="col span_1_of_2">
+						<h2>Log-in</h2>
+							<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+							E-mail<br>
+							<input type="text" name="email" size="30"><br>
+							Password<br>
+							<input type="password" name="password">
+							<br>
+							<br>
+							<input type="submit" value="Submit">
+							</form>
+					</div>
 				</div>
+<<<<<<< HEAD
+				<div class="section group">
+					<div class="col span_2_of_2">
+					<h2>Your Order</h2>
+						<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+							<textarea rows="8" cols="50" name="order" placeholder="Enter your order"></textarea>
+					</div>
+					<div class="col span_2_of_2">
+						<h2>Instructions</h2>
+							<textarea rows="6" cols="50" name="instructions" placeholder="Dietary restrictions/special requests"></textarea>
+					</div>
+					<input type="submit" value="Submit">
+						</form>
+				</div>
+=======
 						<h2>Your Order</h2>
 							<form>
 							<textarea rows="8" cols="50" placeholder="enter your order"></textarea>
@@ -117,6 +132,7 @@
 					<button type="submit" form="nameform" value="Submit">Submit</button>
 							</form>
 
+>>>>>>> b658e1deb44e8aa6da8d0d7e1ae744582d38550f
 			</div>
 			<div id="menu-img">
 				<table>
