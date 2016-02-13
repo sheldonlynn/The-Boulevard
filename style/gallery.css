@@ -1,3 +1,16 @@
+#bg-header {
+	background-image: url(../images/cafe.jpg);
+	background-position: center bottom;
+	background-size: cover;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#pics {
+	padding: 2%;
+}
+
 h2 {
 	font-size: 3em;
 }
@@ -5,10 +18,6 @@ h2 {
 .col img {
 	width: 100%;
 	height: auto;
-}
-
-#top_right_pic {
-	padding: 2%;
 }
 
 /* RESPONSIVE GRID CODE */
@@ -54,6 +63,11 @@ h2 {
 	.col {
 		margin: 1% 0 1% 0%;
 	}
+	
+}
+
+/* CHANGES THE RIGHT PIC WHEN WIDTH BELOW 1000 PIXELS */
+@media only screen and (max-width: 1000px) {
 	.span_3_of_3, .span_2_of_3, .span_1_of_3 {
 		width: 100%;
 	}
