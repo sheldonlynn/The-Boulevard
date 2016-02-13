@@ -11,7 +11,6 @@
 
 #wrapper {
 	margin-left: 150px;
-	position: absolute;
 }
 
 
@@ -71,7 +70,7 @@ header {
 #logo {
 	display: block;
 	margin: auto;
-	padding-top: 5em;
+	padding-top: 2em;
 }
 
 #social {
@@ -97,6 +96,7 @@ header {
 body {
 	font-family: "Raleway", sans-serif;
 	font-weight: 300;
+	background-color: #49412C;
 }
 
 /* HEADER SECTION */
@@ -115,10 +115,9 @@ h1 {
 
 /* NAV SECTION */
 nav {
-	display: fixed;
+	display: inline-block;
 	width: 150px;
 	position: fixed;
-	height: 100%;
 	background-color: #49412C;
 }
 
