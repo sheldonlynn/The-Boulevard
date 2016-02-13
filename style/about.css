@@ -2,10 +2,15 @@ h2 {
 	font-size: 2em;
 }
 
-main img {
-	width: 80%;
-	height: 80%;
+.img-container {
+	background-image: url(../images/latte.jpg);
+	background-position: 50% 50%;
+	background-size: cover;
+	display: flex;
+	width: auto;
+	height: 250px;
 }
+
 
 /*  SECTIONS  */
 .section {
