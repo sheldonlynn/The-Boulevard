@@ -7,18 +7,18 @@
 	height: 100%;
 }
 
+.photo {
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+
 header {
 	position: relative;
 	color: #ede9ce;
 	text-align: center;
 	height: 20em;
 	overflow: hidden;
-}
-
-.photo {
-	width: 100%;
-	height: auto;
-	margin: auto;
 }
 
 /* RESPONSIVE GRID CODE */

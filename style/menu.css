@@ -10,10 +10,6 @@
 	text-align: right;
 }
 
-#menu-img {
-	width: 200px;
-	overflow: hidden;
-}
 
 #menu-img table {
 	position: absolute;
@@ -42,7 +38,7 @@ h2 {
 .col {
 	display: block;
 	float:left;
-	margin: 1% 0 1% 1.6%;
+	margin: 1% 0 1% 0%;
 }
 .col:first-child { margin-left: 0; }
 
