@@ -1,0 +1,39 @@
+@media only screen and (max-width: 500px) {
+	nav {
+		margin: 0;
+		top: 0;
+		height: 50px;
+		width: 100%;
+		z-index: 1;
+	}
+	
+	#logo {
+		position: absolute;
+		top: 0;
+		padding: 0;
+		width: 10%;
+		height: 100%;
+	}
+	
+	#navbar {
+		margin: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		padding-left: 5em;
+		padding-top: 0.8em;
+	}
+	
+	#navbar ul {
+	}
+	
+	#navbar li {
+		padding-right: 1em;
+		float: left;
+	}
+	
+	#navbar li a{
+		display: block;
+		border-bottom: 0;
+	}
+}

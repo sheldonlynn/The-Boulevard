@@ -55,6 +55,12 @@
 	padding-top: 2em;
 }
 
+#logo-mobile {
+	display: none;
+	width: 0;
+	height: 0;
+}
+
 #social {
 	display: flex;
 	justify-content: space-between;
@@ -150,10 +156,6 @@ footer td {
 /* END FOOTER SECTION */
 
 @media only screen and (max-width: 500px) {
-	nav, #social, #logo, #navbar {
-		display: none;
-	}
-	
 	#wrapper {
 		margin-left: 0;
 	}
