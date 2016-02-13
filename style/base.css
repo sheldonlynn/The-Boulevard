@@ -10,9 +10,9 @@
 /* ID SECTION */
 
 #wrapper {
-	margin-left: 9em;
-	position: absolute;
+	margin-left: 150px;
 }
+
 
 #bg-header {
 	background-image: url(../images/cafe.jpg);
@@ -23,18 +23,12 @@
 	height: 100%;
 }
 
-header {
-	position: relative;
-	color: #FFFFFF;
-	text-align: center;
-	height: 20em;
-	overflow: hidden;
-}
-
 /* NAV SECTION */
 #navbar {
-	margin: 10px auto;
+	margin: auto;
 	width: 100px;
+	padding-top: 1em;
+	padding-bottom: 1em;
 	text-align: center;
 }
 
@@ -65,6 +59,20 @@ header {
 	border-bottom: 1px #FFFFFF solid;
 }
 
+#logo {
+	display: block;
+	margin: auto;
+	padding-top: 2em;
+}
+
+#social {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1em;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
 /* END OF NAV SECTION */
 
 #contact {
@@ -78,11 +86,19 @@ header {
 /* HTML TAG SECTION */
 
 body {
-	font-family: 'Raleway', sans-serif;
+	font-family: "Raleway", sans-serif;
 	font-weight: 300;
+	background-color: #49412C;
 }
 
 /* HEADER SECTION */
+header {
+	position: relative;
+	color: #FFFFFF;
+	text-align: center;
+	height: 20em;
+	overflow: hidden;
+}
 
 h1 {
 	position: absolute;
@@ -90,7 +106,7 @@ h1 {
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%) rotate(-10deg);
 	font-size: 5em;
-	font-family: 'Pacifico', cursive;
+	font-family: "Pacifico", cursive;
 	color: #E8DBC6;
 }
 
@@ -98,25 +114,10 @@ h1 {
 
 /* NAV SECTION */
 nav {
+	display: inline-block;
 	width: 150px;
 	position: fixed;
-	height: 100%;
 	background-color: #49412C;
-}
-
-#logo {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20px;
-}
-
-#social {
-	display: flex;
-	justify-content: space-between;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-top: 15px;
 }
 
 nav thead {
@@ -127,7 +128,6 @@ nav table {
 	color: #CAA869;
 	margin: auto;
 	font-size: 0.9em;
-	margin-top: 30px;
 }
 
 nav td {
@@ -161,7 +161,7 @@ footer td {
 
 @media only screen and (max-width: 500px) {
 	nav, #social, #logo, #navbar {
-		width: 0px;
+		display: none;
 	}
 	
 	#wrapper {
