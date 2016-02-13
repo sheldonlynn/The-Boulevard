@@ -1,7 +1,7 @@
 /*CSS stylesheet */
 #input{
 	padding-top: 10px;
-	clear:both;
+	clear: both;
 }
 
 #contact-info {
@@ -13,12 +13,19 @@
 #map {
 	float: left;
 	margin-top: 1em;
-	width: 48%;
+	width: 20em;
 	height: 20em;
 	background-color: #000;
 }
 
 h2{
 	font-size: 1.5em;
-	text-align:center;
+	text-align:left;
+}
+
+@media only screen and (max-width: 500px) {
+	#contact-info {
+		width: 100%;
+		float: bottom;
+	}
 }
