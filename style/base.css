@@ -240,3 +240,73 @@ footer td {
 		display: none;
 	}
 }
+
+/* OLD PHONE */
+@media only screen and (max-width: 360px) {
+	#wrapper {
+		margin-left: 0;
+	}
+	
+	header {
+		margin-top: 50px;
+	}
+	
+	nav {
+		margin: 0;
+		top: 0;
+		height: 50px;
+		width: 100%;
+		z-index: 1;
+	}
+	
+	#logo {
+		display: none;
+	}
+	
+	#navbar {
+		font-size: .8em;
+		width: 100%;
+	}
+	
+	#navbar ul {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+	
+	#navbar li {
+		float: left;
+	}
+	
+	#navbar li a{
+		border-bottom: 0;
+	}
+	
+	#navbar a:hover {
+		border-bottom: 0;
+	}
+	
+	#social {
+		display: none;
+	}
+	
+	#mobile-hours {
+		display: none;
+	}
+	#sitemap {
+		display: none;
+	}
+	footer {
+		justify-content: space-around;
+		text-align: center;
+		font-size: .9em;
+	}
+	#mobile-social img{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#social {
+		display: none;
+	}
+}
+}
