@@ -112,6 +112,10 @@ html, body {
 /* END OF NAV SECTION */
 
 /* FOOTER SECTION */
+footer #address {
+	line-height: 0.5;
+}
+
 #hours td {
 	padding-left: 5px;
 }
