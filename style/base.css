@@ -1,38 +1,75 @@
-/* RESET CSS */
-* {
-	margin: 0;
-	padding: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html, body {
+	height: 100%;
+    margin:0;
+	background-color: #49412C;
 }
 
-/* ID SECTION */
+#bg-header {
+	background-image: url(../images/headercafe.jpg);
+	background-position: center bottom;
+	background-size: cover;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
 
-#wrapper {
+.main-container {
+    height:100%;
+    display:flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -webkit-align-content: stretch;
+    align-content: stretch;
+}
+
+.nav-container {
+	position: fixed;
+	height: 100%;
+    background-color: #49412C;
+    width:150px;
+}
+
+.content-container {
+    -webkit-flex: 1;
+    flex:1;
+    position:relative;
 	margin-left: 150px;
 }
 
+.content {
+    position:absolute;
+    width:100%;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.scrollable {
+     overflow-y: auto;
+}
+
 /* NAV SECTION */
-#navbar {
-	margin: auto;
+#nav-links {
 	width: 100px;
-	padding-top: 1em;
-	padding-bottom: 1em;
+	margin: auto;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 	text-align: center;
 }
 
-#navbar ul {
+#nav-links ul {
+	padding: 0;
 	list-style-type: none;
 }
 		
-#navbar li {
+#nav-links li {
 	display:block;
 	padding-bottom: 2px;
 	padding-top: 2px;
 }
 
-#navbar a {
+#nav-links a {
 	display: block;
 	text-decoration: none;
 	color: #CAA869;
@@ -40,11 +77,11 @@
 	border-bottom: 1px #CAA869 solid;
 }
 
-#navbar a:visited {
+#nav-links a:visited {
 	color: #CAA869;
 }
 
-#navbar a:hover{
+#nav-links a:hover{
 	color: #FFFFFF;
 	border-bottom: 1px #FFFFFF solid;
 }
@@ -55,13 +92,7 @@
 	padding-top: 2em;
 }
 
-#logo-mobile {
-	display: none;
-	width: 0;
-	height: 0;
-}
-
-#social {
+#social-links {
 	display: flex;
 	justify-content: space-between;
 	padding-top: 1em;
@@ -80,7 +111,7 @@
 	padding-left: 5px;
 }
 #mobile-hours {
-		display: none;
+	display: none;
 }
 /* END FOOTER SECTION */
 	
@@ -92,7 +123,6 @@ body {
 	font-weight: 300;
 	color: #6A5750;
 	background-color: #49412C;
-	min-width: 300px;
 }
 
 a {
@@ -106,10 +136,10 @@ header {
 	color: #FFFFFF;
 	text-align: center;
 	height: 20em;
-	overflow: hidden;
 }
 
 h1 {
+	margin: 0;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -122,26 +152,16 @@ h1 {
 
 /* END HEADER SECTION */
 
-/* NAV SECTION */
-nav {
-	width: 150px;
-	position: fixed;
-	background-color: #49412C;
-}
-
-/* END NAV SECTION */
-
 main {
 	padding: .5em 1em .5em 1em;
+	flex: 1;
 	background-color: #f9f0df; /* #4D4D4D; */
 }
 
+
 /* FOOTER SECTION */
 footer {
-	overflow: hidden;
-	position: relative;
 	padding: .5em 1em .5em 1em;
-	bottom: 0;
 	background-color: #e8dbc6;
 	display: flex;
 	flex-direction: row;
@@ -176,15 +196,11 @@ footer td {
 
 /* PHONE */
 @media only screen and (max-width: 768px) {
-	#wrapper {
-		margin-left: 0;
-	}
-	
-	header {
+	.main-container {
 		margin-top: 50px;
 	}
 	
-	nav {
+	.nav-container {
 		margin: 0;
 		top: 0;
 		height: 50px;
@@ -192,122 +208,61 @@ footer td {
 		z-index: 1;
 	}
 	
+	.content-container{
+		margin-left: 0;
+	}
+	
 	#logo {
 		display: none;
 	}
 	
-	#navbar {
+	#nav-links {
+		padding: 0;
 		width: 100%;
 	}
 	
-	#navbar ul {
+	#nav-links ul {
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
 	}
 	
-	#navbar li {
+	#nav-links li {
 		float: left;
 	}
 	
-	#navbar li a{
+	#nav-links li a{
 		border-bottom: 0;
 	}
 	
-	#navbar a:hover {
+	#nav-links a:hover {
 		border-bottom: 0;
 	}
 	
-	#social {
+	#social-links {
 		display: none;
 	}
 	
 	#mobile-hours {
 		display: none;
 	}
+	
 	#sitemap {
 		display: none;
 	}
+	
 	footer {
 		justify-content: space-around;
 		text-align: center;
 		font-size: 1em;
 	}
+	
 	#mobile-social img{
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-	#social {
+	
+	#social-links {
 		display: none;
 	}
-}
-
-/* OLD PHONE */
-@media only screen and (max-width: 360px) {
-	#wrapper {
-		margin-left: 0;
-	}
-	
-	header {
-		margin-top: 50px;
-	}
-	
-	nav {
-		margin: 0;
-		top: 0;
-		height: 50px;
-		width: 100%;
-		z-index: 1;
-	}
-	
-	#logo {
-		display: none;
-	}
-	
-	#navbar {
-		font-size: .8em;
-		width: 100%;
-	}
-	
-	#navbar ul {
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
-	}
-	
-	#navbar li {
-		float: left;
-	}
-	
-	#navbar li a{
-		border-bottom: 0;
-	}
-	
-	#navbar a:hover {
-		border-bottom: 0;
-	}
-	
-	#social {
-		display: none;
-	}
-	
-	#mobile-hours {
-		display: none;
-	}
-	#sitemap {
-		display: none;
-	}
-	footer {
-		justify-content: space-around;
-		text-align: center;
-		font-size: .9em;
-	}
-	#mobile-social img{
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-	#social {
-		display: none;
-	}
-}
 }
