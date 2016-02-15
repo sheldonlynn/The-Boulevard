@@ -85,6 +85,11 @@ h3 {
 	align-self: center;
 }
 
+#logo {
+    -webkit-filter: drop-shadow(0 0 20px #40260B);
+    filter:         drop-shadow(0 0 20px #40260B); 
+}
+
 #nav-links {
 	width: 100px;
 	margin: auto;
@@ -153,7 +158,7 @@ h1 {
 	font-size: 5em;
 	font-family: "Pacifico", cursive;
 	color: #FFFFFF;
-	text-shadow: 3px 0 0 #000000, 0 -3px 0 #000000, 0 3px 0 #000000, -3px 0 0 #000000;
+	text-shadow: 0 0 30px #333;
 	line-height: 1.0;
 }
 
