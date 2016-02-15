@@ -21,6 +21,15 @@ header {
 	margin: auto;
 }
 
+.photo2 {
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+.photo1 {
+	display: none;
+}
+
 /* RESPONSIVE GRID CODE */
 /*  SECTIONS  */
 .section {
@@ -60,11 +69,21 @@ header {
 }
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
 	.col {
 		margin: 1% 0 1% 0%;
 	}
 	.span_3_of_3, .span_2_of_3, .span_1_of_3 {
 		width: 100%;
 	}
+	.photo1 {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	display: block;
+	}
+	.photo2 {
+		display: none;
+	}
+
 }
