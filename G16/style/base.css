@@ -1,6 +1,14 @@
+/* RESET CSS */
+* {
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
 html, body {
 	height: 100%;
-    margin:0;
+    margin: 0;
 	background-color: #49412C;
 }
 
@@ -14,38 +22,36 @@ html, body {
 }
 
 .main-container {
-    height:100%;
-    display:flex;
-    display: -webkit-flex;
+    height: 100%;
+    display: flex;
     flex-direction: row;
-    -webkit-flex-direction: row;
-    -webkit-align-content: stretch;
     align-content: stretch;
+	
 }
 
 .nav-container {
 	position: fixed;
 	height: 100%;
     background-color: #49412C;
-    width:150px;
+    width: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 .content-container {
-    -webkit-flex: 1;
-    flex:1;
-    position:relative;
+    flex: 1;
+    position: relative;
 	margin-left: 150px;
 }
 
 .content {
-    position:absolute;
-    width:100%;
+    position: absolute;
+    width: 100%;
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
+	height: 100%;
 }
 
 .scrollable {
@@ -149,6 +155,7 @@ header {
 	color: #FFFFFF;
 	text-align: center;
 	height: 20em;
+	flex-shrink: 0;
 }
 
 h1 {
@@ -167,7 +174,7 @@ h1 {
 
 main {
 	padding: .5em 1em .5em 1em;
-	flex: 1;
+	flex: 1 0 auto;
 	background-color: #f9f0df; /* #4D4D4D; */
 }
 
@@ -180,6 +187,7 @@ footer {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+	flex-shrink: 0;
 	font-size: 0.8em;
 }
 
