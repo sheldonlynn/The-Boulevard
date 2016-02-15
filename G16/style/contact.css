@@ -1,0 +1,40 @@
+/*CSS stylesheet */
+
+#bg-header {
+	background-image: url(../images/exterior.jpg);
+	background-position: center bottom;
+	background-size: cover;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#input{
+	padding-top: 10px;
+	clear: both;
+}
+
+#contact-info {
+	float: left;
+	width: 70%;
+}
+
+#map {
+	float: left;
+	margin-top: 1em;
+	width: 20em;
+	height: 20em;
+	background-color: #000;
+}
+
+h2{
+	font-size: 1.5em;
+	text-align:left;
+}
+
+@media only screen and (max-width: 500px) {
+	#contact-info {
+		width: 100%;
+		float: bottom;
+	}
+}

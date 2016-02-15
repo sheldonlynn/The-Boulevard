@@ -1,0 +1,74 @@
+#bg-header {
+	background-image: url(../images/cafe.jpg);
+	background-position: center bottom;
+	background-size: cover;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+pics {
+	padding: 2%;
+}
+
+h2 {
+	font-size: 3em;
+}
+
+.col img {
+	width: 100%;
+	height: auto;
+}
+
+/* RESPONSIVE GRID CODE */
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child {
+	margin-left: 0;
+}
+
+/*  GROUPING  */
+.group:before, .group:after {
+	content:"";
+	display:table; 
+}
+.group:after {
+	clear:both;
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+	width: 100%;
+}
+.span_2_of_3 {
+	width: 66.13%;
+}
+.span_1_of_3 {
+	width: 32.26%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {
+		margin: 1% 0 1% 0%;
+	}
+	
+}
+
+/* CHANGES THE RIGHT PIC WHEN WIDTH BELOW 1000 PIXELS */
+@media only screen and (max-width: 1000px) {
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 {
+		width: 100%;
+	}
+}
