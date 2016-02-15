@@ -1,6 +1,6 @@
 /* HEADER SECTION */
 #bg-header {
-	background-image: url(../images/cafe.jpg);
+	background-image: url(../images/headercafe.jpg);
 	background-position: center bottom;
 	background-size: cover;
 	top: 0;
@@ -14,7 +14,7 @@
 	padding: 2%;
 }
 
-.content-container img {
+main img {
 	width: 100%;
 	height: auto;
 }

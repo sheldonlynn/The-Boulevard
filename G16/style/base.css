@@ -153,6 +153,7 @@ h1 {
 	font-size: 5em;
 	font-family: "Pacifico", cursive;
 	color: #FFFFFF;
+	text-shadow: 3px 0 0 #000000, 0 -3px 0 #000000, 0 3px 0 #000000, -3px 0 0 #000000;
 	line-height: 1.0;
 }
 

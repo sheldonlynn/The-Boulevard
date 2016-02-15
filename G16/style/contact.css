@@ -25,7 +25,8 @@
 	margin-top: 1em;
 	width: 20em;
 	height: 20em;
-	background-color: #000;
+	background-color: #000000;
+	color: #FFFFFF; /* TEMPORARY - DELETE WHEN GOOGLE MAP JAVASCRIPT IS ADDED */
 }
 /* END MAIN SECTION */
 
