@@ -17,6 +17,19 @@
 	right: 0;
 	border-collapse: collapse;
 }
+dt {
+	border-bottom: dotted 2px #6A5750;
+}
+.price {
+	float: right;
+	padding-right: 2em;
+	background: #f9f0df;
+	padding-bottom: .5em;
+}
+strong {
+	background: #f9f0df;
+	padding-bottom: .5em;
+}
 
 main {
 	min-height: 800px;
@@ -57,16 +70,14 @@ h2 {
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 768px) {
 	.col { 
 		margin: 1% 0 1% 0%;
 	}
 	.span_2_of_2, .span_1_of_2 {
 		width: 100%;
 	}
-}
-
-@media only screen and (max-width: 768px) {
+	
 	main, #menu-img table {
 		margin-top: 50px;
 	}
