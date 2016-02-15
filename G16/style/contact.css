@@ -1,5 +1,4 @@
-/*CSS stylesheet */
-
+/* HEADER SECTION */
 #bg-header {
 	background-image: url(../images/exterior.jpg);
 	background-position: center bottom;
@@ -8,7 +7,9 @@
 	width: 100%;
 	height: 100%;
 }
+/* END HEADER SECTION */
 
+/* MAIN CONTENT SECTION */
 #input{
 	padding-top: 10px;
 	clear: both;
@@ -16,7 +17,7 @@
 
 #contact-info {
 	float: left;
-	width: 70%;
+	width: 58%;
 }
 
 #map {
@@ -26,15 +27,10 @@
 	height: 20em;
 	background-color: #000;
 }
+/* END MAIN SECTION */
 
-h2{
-	font-size: 1.5em;
-	text-align:left;
-}
-
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
 	#contact-info {
 		width: 100%;
-		float: bottom;
 	}
 }

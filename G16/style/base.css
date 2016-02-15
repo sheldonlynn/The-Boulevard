@@ -6,29 +6,47 @@
 	vertical-align: baseline;
 }
 
+/* HTML ELEMENTS */
+/* Makes body fill height */
 html, body {
 	height: 100%;
     margin: 0;
+	font-family: "Raleway", sans-serif;
+	color: #2F2724;
 	background-color: #49412C;
 }
 
-#bg-header {
-	background-image: url(../images/headercafe.jpg);
-	background-position: center bottom;
-	background-size: cover;
-	top: 0;
-	width: 100%;
-	height: 100%;
+a {
+	color: #2F2724;
+	font-weight: bold;
 }
 
+a:hover {
+	color: #6A5750;
+}
+
+h2 {
+	margin: 0;
+	font-size: 3em;
+	font-family: "Pacifico", cursive;
+	text-align: center;
+}
+h3 {
+	font-size: 2em;
+}
+/* END HTML SECTION */
+
+/* PAGE LAYOUT */
+/* USING FLEX BOX */
 .main-container {
     height: 100%;
+	min-height: 100%;
     display: flex;
     flex-direction: row;
-    align-content: stretch;
-	
+    align-content: stretch;	
 }
 
+/* Left side containing nav */
 .nav-container {
 	position: fixed;
 	height: 100%;
@@ -39,12 +57,14 @@ html, body {
     justify-content: space-around;
 }
 
+/* Right side containing header, main, footer */
 .content-container {
-    flex: 1;
+    flex: auto;
     position: relative;
 	margin-left: 150px;
 }
 
+/* Make right side fill height of screen and display in columns */
 .content {
     position: absolute;
     width: 100%;
@@ -54,12 +74,13 @@ html, body {
 	height: 100%;
 }
 
-.scrollable {
-     overflow-y: auto;
+/* Spaces out flex */
+.spacer {
+	flex-grow: 2;
 }
+/* END PAGE LAYOUT SECTION */
 
 /* NAV SECTION */
-
 #logo-link {
 	align-self: center;
 }
@@ -79,7 +100,7 @@ html, body {
 }
 		
 #nav-links li {
-	display:block;
+	display: block;
 	padding-bottom: 2px;
 	padding-top: 2px;
 }
@@ -87,13 +108,13 @@ html, body {
 #nav-links a {
 	display: block;
 	text-decoration: none;
-	color: #CAA869;
+	color: #D9B678;
 	padding-bottom: 5px;
-	border-bottom: 1px #CAA869 solid;
+	border-bottom: 1px #D9B678 solid;
 }
 
 #nav-links a:visited {
-	color: #CAA869;
+	color: #D9B678;
 }
 
 #nav-links a:hover{
@@ -110,14 +131,69 @@ html, body {
 	margin-top: auto;
 	padding-bottom: 1em;
 }
+/* END NAV SECTION */
 
-.spacer {
-	flex-grow: 2;
+/* HEADER SECTION */
+header {
+	position: relative;
+	color: #FFFFFF;
+	text-align: center;
+	height: 20em;
+	flex: none;
 }
 
-/* END OF NAV SECTION */
+/* Large text over image */
+h1 {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/* Moves text position with screen sizing and rotates text */
+	transform: translateX(-50%) translateY(-50%) rotate(-10deg);
+	font-size: 5em;
+	font-family: "Pacifico", cursive;
+	color: #FFFFFF;
+	line-height: 1.0;
+}
+
+/* Image for large headers */
+#bg-header {
+	background-image: url(../images/headercafe.jpg);
+	background-position: center bottom;
+	background-size: cover;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+/* END HEADER SECTION */
+
+
+/* MAIN CONTENT SECTION */
+main {
+	padding: .5em 1em .5em 1em;
+	flex: 1 0 auto;
+	background-color: #F9F0DF;
+}
+/* END MAIN SECTION */
 
 /* FOOTER SECTION */
+footer {
+	padding: .5em 1em .5em 1em;
+	background-color: #E8DBC6;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	flex: none;
+	font-size: 0.8em;
+}
+
+footer td {
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
 footer #address {
 	line-height: 0.5;
 }
@@ -133,70 +209,6 @@ footer #address {
 	display: none;
 }
 /* END FOOTER SECTION */
-	
-
-/* HTML TAG SECTION */
-
-body {
-	font-family: "Raleway", sans-serif;
-	font-weight: 300;
-	color: #6A5750;
-	background-color: #49412C;
-}
-
-a {
-	color: #6A5750;
-	font-weight: 700;
-}
-
-/* HEADER SECTION */
-header {
-	position: relative;
-	color: #FFFFFF;
-	text-align: center;
-	height: 20em;
-	flex-shrink: 0;
-}
-
-h1 {
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translateX(-50%) translateY(-50%) rotate(-10deg);
-	font-size: 5em;
-	font-family: "Pacifico", cursive;
-	color: #fff;
-	line-height: 1.0;
-}
-
-/* END HEADER SECTION */
-
-main {
-	padding: .5em 1em .5em 1em;
-	flex: 1 0 auto;
-	background-color: #f9f0df; /* #4D4D4D; */
-}
-
-
-/* FOOTER SECTION */
-footer {
-	padding: .5em 1em .5em 1em;
-	background-color: #e8dbc6;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	flex-shrink: 0;
-	font-size: 0.8em;
-}
-
-footer td {
-	text-align: center;
-	padding-left: 5px;
-	padding-right: 5px;
-}
-/* END FOOTER SECTION */
 
 /* HIDE HOURS TABLE IN FOOTER ON SMALLER SCREEN */
 @media only screen and (max-width: 1000px) {
@@ -206,7 +218,7 @@ footer td {
 }
 
 /* DON'T DISPLAY MOBILE FOOTER ITEMS ON LARGE SCREEN */
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 	#sitemap-link {
 		display: none;
 	}
@@ -215,8 +227,8 @@ footer td {
 	}
 }
 
-/* PHONE */
-@media only screen and (max-width: 768px) {
+/* RESIZE WIDTH FOR PHONE SCREEN*/
+@media screen and (max-width: 768px){
 	.main-container {
 		margin-top: 50px;
 	}
@@ -285,6 +297,56 @@ footer td {
 	#mobile-social img{
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+}
+
+/* RESIZE NAV FOR SCREEN HEIGHT */
+@media screen and (max-height: 450px) {
+	.main-container {
+		margin-top: 50px;
+	}
+	
+	.nav-container {
+		margin: 0;
+		top: 0;
+		height: 50px;
+		width: 100%;
+		z-index: 1;
+	}
+	
+	.content-container{
+		margin-left: 0;
+	}
+	
+	#logo {
+		display: none;
+	}
+	
+	#logo-link {
+		width: 100%;
+	}
+	
+	#nav-links {
+		padding: 0;
+		width: 100%;
+	}
+	
+	#nav-links ul {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+	
+	#nav-links li {
+		float: left;
+	}
+	
+	#nav-links li a{
+		border-bottom: 0;
+	}
+	
+	#nav-links a:hover {
+		border-bottom: 0;
 	}
 	
 	#social-links {

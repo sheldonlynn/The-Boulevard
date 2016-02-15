@@ -1,5 +1,5 @@
-/* IMAGE SECTION */
-#about-photo {
+/* MAIN CONTENT */
+.about-photo {
 	background-image: url(../images/barista.jpg);
 	background-position: 50% 50%;
 	background-size: cover;
@@ -7,7 +7,19 @@
 	height: 300px;
 }
 
-.img-container {
+.community-photo {
+	background-image: url(../images/latte.jpg);
+	background-position: 50% 50%;
+	background-size: cover;
+	width: auto;
+	height: 300px;
+}
+
+.community-photo2 {
+	display: none;
+}
+
+.environment-photo {
 	background-image: url(../images/latte.jpg);
 	background-position: 50% 50%;
 	background-size: cover;
@@ -22,11 +34,6 @@
 	display: none;
 }
 /* END IMAGE SECTION */
-
-/* HEADER SECTION*/
-h2 {
-	font-size: 2em;
-}
 
 #bg-header {
 	background-image: url(../images/machine.jpg);
@@ -88,16 +95,17 @@ h2 {
 	.span_3_of_3, .span_2_of_3, .span_1_of_3 { 
 		width: 100%;
 	}
-
-	.photo1 {
-	width: auto;
-	height: 300px;
-	display: block;
+	
+	.community-photo {
+		display: none;
 	}
 	
-	.photo2 {
-		background-image: none;
-		display: none;
-		height: 0px
+	.community-photo2 {
+		display: block;
+		background-image: url(../images/latte.jpg);
+		background-position: 50% 50%;
+		background-size: cover;
+		width: auto;
+		height: 300px;
 	}
 }

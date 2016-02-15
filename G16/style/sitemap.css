@@ -1,3 +1,9 @@
+/* HTML ELEMENTS */
 main {
-	padding-left: 1em;
+	padding-left: 2em;
 }
+
+ul {
+	list-style: none;
+}
+/* END HTML SECTION */

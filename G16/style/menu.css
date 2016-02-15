@@ -1,15 +1,7 @@
+/*MAIN CONTENT SECTION */
 #menu-items {
 	margin-right: 200px;
 }
-
-#menu-items table {
-	width: 100%;
-}
-
-#menu-items td:last-child {
-	text-align: right;
-}
-
 
 #menu-img table {
 	position: absolute;
@@ -17,28 +9,25 @@
 	right: 0;
 	border-collapse: collapse;
 }
+
 dt {
 	border-bottom: dotted 2px #6A5750;
 }
-.menu em {
+
+.price {
 	font-weight: normal;
 	float: right;
 	padding-right: 2em;
 	background: #f9f0df;
 	padding-bottom: .5em;
 }
-strong {
+
+.item {
 	background: #f9f0df;
 	padding-bottom: .5em;
+	font-weight: bold
 }
-
-main {
-	min-height: 800px;
-}
-
-h2 {
-	font-size: 2em;
-}
+/* END MAIN SECTION */
 
 /* RESPONSIVE GRID CODE */
 /*  SECTIONS  */
@@ -54,33 +43,35 @@ h2 {
 	float:left;
 	margin: 1% 0 1% 0%;
 }
-.col:first-child { margin-left: 0; }
+
+.col:first-child {
+	margin-left: 0;
+}
 
 /*  GROUPING  */
-.group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both;}
-.group { zoom:1; /* For IE 6/7 */ }
+.group:before, .group:after {
+	content:""; display:table;
+}
+.group:after {
+	clear:both;
+}
+
 /*  GRID OF TWO  */
 .span_2_of_2 {
 	width: 100%;
 }
+
 .span_1_of_2 {
 	width: 49.2%;
 }
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
+/*  GO FULL WIDTH AT LESS THAN 768 PIXELS */
 @media only screen and (max-width: 768px) {
 	.col { 
 		margin: 1% 0 1% 0%;
 	}
 	.span_2_of_2, .span_1_of_2 {
 		width: 100%;
-	}
-	
-	main, #menu-img table {
-		margin-top: 50px;
 	}
 	
 	#menu-img {

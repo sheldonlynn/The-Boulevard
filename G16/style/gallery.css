@@ -1,3 +1,4 @@
+/* HEADER SECTION */
 #bg-header {
 	background-image: url(../images/cafe.jpg);
 	background-position: center bottom;
@@ -6,21 +7,20 @@
 	width: 100%;
 	height: 100%;
 }
+/* END HEADER SECTION */
 
-pics {
+/* MAIN CONTENT SECTION */
+.pics {
 	padding: 2%;
 }
 
-h2 {
-	font-size: 3em;
-}
-
-.col img {
+.content-container img {
 	width: 100%;
 	height: auto;
 }
+/* END MAIN SECTION
 
-/* RESPONSIVE GRID CODE */
+/* RESPONSIVE GRID */
 /*  SECTIONS  */
 .section {
 	clear: both;
@@ -34,6 +34,7 @@ h2 {
 	float:left;
 	margin: 1% 0 1% 1.6%;
 }
+
 .col:first-child {
 	margin-left: 0;
 }
@@ -43,6 +44,7 @@ h2 {
 	content:"";
 	display:table; 
 }
+
 .group:after {
 	clear:both;
 }
@@ -51,24 +53,22 @@ h2 {
 .span_3_of_3 {
 	width: 100%;
 }
+
 .span_2_of_3 {
 	width: 66.13%;
 }
+
 .span_1_of_3 {
 	width: 32.26%;
 }
 
-/*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 480px) {
+/* CHANGES THE RIGHT PIC WHEN WIDTH BELOW 1000 PIXELS */
+@media only screen and (max-width: 1000px) {
 	.col {
 		margin: 1% 0 1% 0%;
 	}
 	
-}
-
-/* CHANGES THE RIGHT PIC WHEN WIDTH BELOW 1000 PIXELS */
-@media only screen and (max-width: 1000px) {
-	.span_3_of_3, .span_2_of_3, .span_1_of_3 {
+	.col {
 		width: 100%;
 	}
 }
