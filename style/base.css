@@ -28,6 +28,9 @@ html, body {
 	height: 100%;
     background-color: #49412C;
     width:150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .content-container {
@@ -50,12 +53,18 @@ html, body {
 }
 
 /* NAV SECTION */
+
+#logo-link {
+	align-self: center;
+}
+
 #nav-links {
 	width: 100px;
 	margin: auto;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 	text-align: center;
+	align-self: center;
 }
 
 #nav-links ul {
@@ -86,18 +95,18 @@ html, body {
 	border-bottom: 1px #FFFFFF solid;
 }
 
-#logo {
-	display: block;
-	margin: auto;
-	padding-top: 2em;
-}
-
 #social-links {
 	display: flex;
 	justify-content: space-between;
 	padding-top: 1em;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: auto;
+	padding-bottom: 1em;
+}
+
+.spacer {
+	flex-grow: 2;
 }
 
 /* END OF NAV SECTION */
@@ -214,6 +223,10 @@ footer td {
 	
 	#logo {
 		display: none;
+	}
+	
+	#logo-link {
+		width: 100%;
 	}
 	
 	#nav-links {
