@@ -20,7 +20,8 @@
 dt {
 	border-bottom: dotted 2px #6A5750;
 }
-.price {
+.menu em {
+	font-weight: normal;
 	float: right;
 	padding-right: 2em;
 	background: #f9f0df;
