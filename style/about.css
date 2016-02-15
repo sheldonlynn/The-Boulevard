@@ -1,31 +1,25 @@
 h2 {
 	font-size: 2em;
 }
-.img-box {
-	
-}
-.img-container {
-	background-image: url(../images/latte.jpg);
-	background-position: 50% 50%;
-	background-size: cover;
-	width: auto;
-	height: 300px;
-}
-.img-container2 {
-	background-image: url(../images/latte.jpg);
-	background-position: 50% 50%;
-	background-size: cover;
-	width: auto;
-	height: 0px;
-	display: none;
+
+.photo {
+	padding-top: 2em;
+	width: 100%;
+	height: auto;
+	margin: auto;
 }
 
-.img-container1 {
-	background-image: url(../images/latte.jpg);
-	background-position: 50% 50%;
-	background-size: cover;
-	width: auto;
-	height: 300px;
+.photo2 {
+	padding-top: 2em;
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+.photo1 {
+	padding-top: 2em;
+	height: 0;
+	width: 0;
+	display: none;
 }
 
 #bg-header {
@@ -73,15 +67,14 @@ h2 {
 		width: 100%;
 	}
 
-	.img-container1 {
-		display: none;
+	.photo1 {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	display: block;
 	}
-	.img-container2 {
-		background-image: url(../images/latte.jpg);
-		background-position: 50% 50%;
-		background-size: cover;
-		width: auto;
-		height: 300px;
-		display: block;
+	
+	.photo2 {
+		display: none;
 	}
 }
