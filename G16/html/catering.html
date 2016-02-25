@@ -42,24 +42,24 @@
 							<div class="col span_1_of_2">
 								<h3>Sign Up</h3>
 									<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
-									E-mail<br>
-									<input type="text" name="email" size="20"><br>
-									First Name<br>
-									<input type="text" name="firstname"><br>
-									Last Name<br>
-									<input type="text" name="lastname"><br>
-									City<br>
-									<input type="text" name="city"><br>
-									Province<br>
-									<input type="text" name="province" size="2"><br>
-									Phone number<br>
-									<input type="text" name="phoneNumber" size="11"><br>
-									Password<br>
-									<input type="password" name="password" size="11"><br>
-									Re-enter password<br>
-									<input type="password" name="password" size="11">
-									<br><br>
-									<input type="submit" value="Submit">
+										E-mail<br>
+										<input type="text" name="email" size="20" required><br>
+										First Name<br>
+										<input type="text" name="firstname" required><br>
+										Last Name<br>
+										<input type="text" name="lastname" required><br>
+										City<br>
+										<input type="text" name="city" required><br>
+										Address<br>
+										<input type="text" name="adress" required><br>
+										Phone number<br>
+										<input type="text" name="phoneNumber" size="11" required><br>
+										Password<br>
+										<input type="password" name="password" size="11" required><br>
+										Re-enter password<br>
+										<input type="password" name="password" size="11" required>
+										<br><br>
+										<input type="submit" value="Sign Up">
 									</form>
 							</div>
 							<div class="col span_1_of_2">
@@ -71,19 +71,19 @@
 									<input type="password" name="password">
 									<br>
 									<br>
-									<input type="submit" value="Submit">
+									<input type="submit" value="Log In">
 									</form>
 							</div>
 						</div>
 						<div class="section group">
 							<div class="col span_2_of_2">
-							<h3>Your Order</h3>
 								<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+									<h3>Your Order</h3>
 									<textarea rows="8" cols="40" name="order" placeholder="Enter your order"></textarea>
 									<h3>Instructions</h3>
 									<textarea rows="6" cols="40" name="instructions" placeholder="Dietary restrictions/special requests"></textarea>
 									<br>
-									<input type="submit" value="Submit">
+									<input type="submit" value="Place Order">
 								</form>
 							</div>
 						</div>
