@@ -1,6 +1,7 @@
 /* HTML ELEMENTS */
 h3 {
 	text-align: center;
+  margin: 15px;
 }
 /* END HTML SECTION */
 
@@ -20,6 +21,13 @@ h3 {
 	width: 100%;
 	height: auto;
 	margin: auto;
+}
+
+.paragraph {
+  line-height: 180%;
+  margin: 0;
+  text-align: left;
+  font-size: 0.9em;
 }
 
 .photo2 {
