@@ -85,11 +85,6 @@ h3 {
 	align-self: center;
 }
 
-#logo {
-    -webkit-filter: drop-shadow(0 0 20px #40260B);
-    filter:         drop-shadow(0 0 20px #40260B); 
-}
-
 #nav-links {
 	width: 100px;
 	margin: auto;
