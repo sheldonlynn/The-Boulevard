@@ -41,37 +41,44 @@
 						<div class="section group">
 							<div class="col span_1_of_2">
 								<h3>Sign Up</h3>
-									<form name="signUpForm" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return validate()">
+									<form name="signUpForm" action="http://webdevfoundations.net/scripts/formdemo.asp" 
+									method="post" onsubmit="return validate()">
 										E-mail<br>
-										<input type="text" name="email" size="20" required><br>
+										<input type="email" name="email" size="20" required /><br>
 										First Name<br>
-										<input type="text" name="firstname" required><br>
+										<input type="text" name="firstname" required /><br>
 										Last Name<br>
-										<input type="text" name="lastname" required><br>
+										<input type="text" name="lastname" required /><br>
 										Address<br>
-										<input type="text" name="adress" required><br>
+										<input type="text" name="adress" required /><br>
 										Postal Code<br>
-										<input type="text" name="postalcode" size ="7" required><br>
-										Phone number<br>
-										<input type="text" name="phoneNumber" size="11" required><br>
+										<input type="text" name="postalcode" size ="6" maxlength="6"
+										 pattern="[0-9, A-Z, a-z]{6}" required /><br>
+										Phone Number<br>
+										<input type = "text" name = "phone" maxlength="3" size="3"
+										pattern="[0-9]{3}" id = "day" required /> -
+										<input type = "text" name = "phone" maxlength="3" size="3"
+										pattern="[0-9]{3}" id="month" required /> -
+										<input type = "text" name = "phone" maxlength="4" size="4"
+										pattern="[0-9]{4}" id="year" required /> <br>
 										Password<br>
-										<input type="password" name="password" size="11" required><br>
+										<input type="password" name="password" size="11" required /><br>
 										Re-enter password<br>
-										<input type="password" name="password" size="11" required>
+										<input type="password" name="password" size="11" required />
 										<br><br>
-										<input type="submit" value="Sign Up">
+										<input type="submit" value="Sign Up"/>
 									</form>
 							</div>
 							<div class="col span_1_of_2">
 								<h3>Log-in</h3>
 									<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
 									E-mail<br>
-									<input type="text" name="email" size="20"><br>
+									<input type="text" name="email" size="20" required /><br>
 									Password<br>
-									<input type="password" name="password">
+									<input type="password" name="password" required />
 									<br>
 									<br>
-									<input type="submit" value="Log In">
+									<input type="submit" value="Log In" />
 									</form>
 							</div>
 						</div>
@@ -79,11 +86,11 @@
 							<div class="col span_2_of_2">
 								<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
 									<h3>Your Order</h3>
-									<textarea rows="8" cols="40" name="order" placeholder="Enter your order"></textarea>
+									<textarea rows="8" cols="40" name="order" placeholder="Enter your order" required></textarea>
 									<h3>Instructions</h3>
 									<textarea rows="6" cols="40" name="instructions" placeholder="Dietary restrictions/special requests"></textarea>
 									<br>
-									<input type="submit" value="Place Order">
+									<input type="submit" value="Place Order" />
 								</form>
 							</div>
 						</div>
