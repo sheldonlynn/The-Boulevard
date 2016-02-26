@@ -14,6 +14,10 @@ dt {
 	border-bottom: dotted 2px #6A5750;
 }
 
+input{
+	margin-bottom: 0.5em;
+}
+
 .price {
 	font-weight: normal;
 	float: right;

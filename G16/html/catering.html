@@ -41,17 +41,17 @@
 						<div class="section group">
 							<div class="col span_1_of_2">
 								<h3>Sign Up</h3>
-									<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+									<form name="signUpForm" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return validate()">
 										E-mail<br>
 										<input type="text" name="email" size="20" required><br>
 										First Name<br>
 										<input type="text" name="firstname" required><br>
 										Last Name<br>
 										<input type="text" name="lastname" required><br>
-										City<br>
-										<input type="text" name="city" required><br>
 										Address<br>
 										<input type="text" name="adress" required><br>
+										Postal Code<br>
+										<input type="text" name="postalcode" size ="7" required><br>
 										Phone number<br>
 										<input type="text" name="phoneNumber" size="11" required><br>
 										Password<br>
@@ -219,5 +219,6 @@
 			</div>
 		</div>
 	</div>
+	<script src="../javascript/form-validation.js"></script>
 </body>
 </html>
