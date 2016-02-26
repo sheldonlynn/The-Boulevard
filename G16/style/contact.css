@@ -17,16 +17,15 @@
 
 #contact-info {
 	float: left;
-	width: 58%;
+	width: 50%;
 }
 
-#map {
+#map_canvas {
 	float: left;
 	margin-top: 1em;
 	width: 20em;
 	height: 20em;
-	background-color: #000000;
-	color: #FFFFFF; /* TEMPORARY - DELETE WHEN GOOGLE MAP JAVASCRIPT IS ADDED */
+	border: 2px solid #49412C;
 }
 /* END MAIN SECTION */
 
