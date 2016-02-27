@@ -13,9 +13,18 @@
 dt {
 	border-bottom: dotted 2px #6A5750;
 }
-
+dt.coffees {
+	font-weight: bold;
+	font-size: 1.3em;
+	border-bottom: 0;
+}
 input{
 	margin-bottom: 0.5em;
+}
+
+h4 {
+	font-size: 1.2em;
+	font-weight: bold;
 }
 
 .price {
@@ -70,7 +79,7 @@ input{
 }
 
 /*  GO FULL WIDTH AT LESS THAN 768 PIXELS */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1085px) {
 	.col { 
 		margin: 1% 0 1% 0%;
 	}
