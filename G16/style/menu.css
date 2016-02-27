@@ -1,6 +1,6 @@
 /*MAIN CONTENT SECTION */
 #menu-items {
-	margin-right: 200px;
+	margin-right: 300px;
 }
 
 #menu-img table {
@@ -8,6 +8,11 @@
 	top: 0;
 	right: 0;
 	border-collapse: collapse;
+}
+
+#menu-img img {
+  width: 300px;
+  height: auto;
 }
 
 dt {
