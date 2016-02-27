@@ -10,9 +10,13 @@
 /* END HEADER SECTION */
 
 /* MAIN CONTENT SECTION */
+#artist{
+	max-width: 70em;
+	margin: auto;
+}
 
 #artist img{
-	width: 12em;
+	width: 20em;
     float: right;
 }
 /* END MAIN SECTION
