@@ -10,23 +10,10 @@
 /* END HEADER SECTION */
 
 /* MAIN CONTENT SECTION */
-#artist{
-	width: 100%;
-}
-
-#artist p{
-	width: 65%;
-	float: left;
-	margin-top: 0px;
-}
 
 #artist img{
 	width: 12em;
-}
-
-main img {
-	width: 100%;
-	height: auto;
+    float: right;
 }
 /* END MAIN SECTION
 
@@ -35,15 +22,14 @@ main img {
 	h3{
 		text-align: center;
 	}
-	
+    
 	#artist p{
-		width: 100%;
 		text-align: center;
 	}
 	
 	#artist img{
-		position: ;
-		margin-left: auto;
-		margin-right: auto;
+		display: block;
+        float: none;
+		margin: auto;
 	}
 }
