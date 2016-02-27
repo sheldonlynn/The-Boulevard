@@ -5,10 +5,10 @@
 	<title>Contact</title>
 	<link rel="stylesheet" type="text/css" href="../style/base.css">
 	<link rel="stylesheet" type="text/css" href="../style/contact.css">
-	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,300" rel="stylesheet" type="text/css">
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
-	<script src="../javascript/google_maps.js"></script>
+	<script src="../javascript/google-maps.js"></script>
 </head>
 <body>	
 	<div class="main-container">
@@ -43,59 +43,66 @@
 				</header>
 				
 				<main>
-					<div id="contact-info">
-						<h3>Location</h3>
-						<p>5970 University Boulevard</p>
-						<p>Vancouver, British Columbia Canada V6T 1Z3</p>
-						<h3>Hours</h3>
-						<table>
-							<tr>
-								<td>Monday</td>
-								<td>7am - 7pm</td>
-							</tr>
-							<tr>
-								<td>Tuesday</td>
-								<td>7am - 7pm</td>
-							</tr>
-							<tr>
-								<td>Wednesday</td>
-								<td>7am - 7pm</td>
-							</tr>
-							<tr>
-								<td>Thursday</td>
-								<td>7am - 7pm</td>
-							</tr>
-							<tr>
-								<td>Friday</td>
-								<td>7am - 7pm</td>
-							</tr>
-							<tr>
-								<td>Saturday</td>
-								<td>7am - 7pm</td>
-							</tr>
-							<tr>
-								<td>Sunday</td>
-								<td>8am - 6pm</td>
-							</tr>
-						</table>
-						<h3>Contact</h3>
-						<p>Telephone: 604.827.4488</p>
-						<p>Email: info@theboulevard.ca</p>
-					</div>
-					<div id="map_canvas" onload="initialize()">
-
+					<div class="flex-row">
+						<div class="flex-col">
+							<div id="location">
+								<h3>Location</h3>
+								<p>5970 University Boulevard</p>
+								<p>Vancouver, British Columbia</p>
+								<p>Canada V6T 1Z3</p>
+							</div>
+							<div id="contact-hours">
+								<h3>Hours</h3>
+								<table>
+									<tr>
+										<td>Monday</td>
+										<td>7am - 7pm</td>
+									</tr>
+									<tr>
+										<td>Tuesday</td>
+										<td>7am - 7pm</td>
+									</tr>
+									<tr>
+										<td>Wednesday</td>
+										<td>7am - 7pm</td>
+									</tr>
+									<tr>
+										<td>Thursday</td>
+										<td>7am - 7pm</td>
+									</tr>
+									<tr>
+										<td>Friday</td>
+										<td>7am - 7pm</td>
+									</tr>
+									<tr>
+										<td>Saturday</td>
+										<td>7am - 7pm</td>
+									</tr>
+									<tr>
+										<td>Sunday</td>
+										<td>8am - 6pm</td>
+									</tr>
+								</table>
+							</div>
+							<div id="contact">
+								<h3>Contact</h3>
+								<p>Telephone: 604.827.4488</p>
+								<p>Email: info@theboulevard.ca</p>
+							</div>
+						</div>
+						<div id="google-map"></div>
 					</div>
 					<div id="input">
 						<h3>Questions/Comments</h3>
-							<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+						<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
 
-								Name:<br>
-								<input type="text" name="firstname"><br>
-								Email:<br>
-								<input type="text" name="lastname"><br><br>
-								<textarea rows="6" cols="40" name="questions-comments"></textarea><br>
-								<input type="submit" value="Submit">
-							</form>
+							Name:<br>
+							<input type="text" name="firstname"><br>
+							Email:<br>
+							<input type="text" name="lastname"><br><br>
+							<textarea rows="6" cols="40" name="questions-comments"></textarea><br>
+							<input type="submit" value="Submit">
+						</form>
 					</div>
 				</main>
 					
