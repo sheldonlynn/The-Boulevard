@@ -1,0 +1,122 @@
+/* MAIN CONTENT */
+.anything {
+	min-height: 100%;
+	width: 100%;
+}
+.about-photo {
+	background-image: url(../images/barista.jpg);
+	background-position: 50% 50%;
+	background-size: cover;
+	width: auto;
+	height: 300px;
+	margin-top: 20%;
+	position: relative;
+	float: bottom;
+}
+
+.community-photo {
+	background-image: url(../images/latte.jpg);
+	background-position: 50% 50%;
+	background-size: cover;
+	width: auto;
+	height: 300px;
+	margin-top: 10%;
+	position: relative;
+	float: bottom;
+}
+
+.community-photo2 {
+	display: none;
+}
+
+.environment-photo {
+	background-image: url(../images/latte.jpg);
+	background-position: 50% 50%;
+	background-size: cover;
+	width: auto;
+	height: 300px;
+	margin-top: 10%;
+	position: relative;
+	float: bottom;
+}
+
+.photo1 {
+	padding-top: 2em;
+	height: 0;
+	width: 0;
+	display: none;
+}
+/* END IMAGE SECTION */
+
+#bg-header {
+	background-image: url(../images/machine.jpg);
+	background-position: center center;
+	background-size: cover;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+/* END HEADER SECTION */
+
+/* RESPONSIVE GRID */
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	flex-direction: row;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child {
+	margin-left: 0;
+}
+
+/*  GROUPING  */
+.group:before, .group:after {
+	content:""; display:table;
+}
+
+.group:after {
+	clear:both;
+}
+
+/*  GRID OF THREE  */
+.span_2_of_2 {
+	width: 100%;
+}
+
+.span_1_of_2 {
+	width: 48.13%;
+}
+
+/*  GO FULL WIDTH BELOW 768 PIXELS */
+@media only screen and (max-width: 768px) {
+	.col {
+		margin: 1% 0 1% 0%;
+	}
+	
+	.span_2_of_2, .span_1_of_2 { 
+		width: 100%;
+	}
+	
+	.community-photo {
+		display: none;
+	}
+	
+	.community-photo2 {
+		display: block;
+		background-image: url(../images/latte.jpg);
+		background-position: 50% 50%;
+		background-size: cover;
+		width: auto;
+		height: 300px;
+	}
+}
