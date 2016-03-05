@@ -15,7 +15,7 @@ function validate(){
 
 	if (testEmail() == false || testName() == false)
 		alert("Help");
-	
+
 	if(pass != rePass) {
 		alert("Passwords do not match");
 		return false;
@@ -63,5 +63,12 @@ function testPhone(num0,num1,num2) {
 			return true;
 	} else
 		return false;
+}
+
+
+//Makes the input capitalized
+function makeUpperCase() {
+    var pcode = document.forms["signUpForm"]["postalcode"].value;
+    pcode.value = pcode.value.toUpperCase();
 }
 

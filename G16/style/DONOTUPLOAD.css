@@ -1,11 +1,17 @@
 /* MAIN CONTENT */
-
+.anything {
+	min-height: 100%;
+	width: 100%;
+}
 .about-photo {
 	background-image: url(../images/barista.jpg);
 	background-position: 50% 50%;
 	background-size: cover;
 	width: auto;
 	height: 300px;
+	margin-top: 20%;
+	position: relative;
+	float: bottom;
 }
 
 .community-photo {
@@ -14,6 +20,9 @@
 	background-size: cover;
 	width: auto;
 	height: 300px;
+	margin-top: 10%;
+	position: relative;
+	float: bottom;
 }
 
 .community-photo2 {
@@ -26,6 +35,9 @@
 	background-size: cover;
 	width: auto;
 	height: 300px;
+	margin-top: 10%;
+	position: relative;
+	float: bottom;
 }
 
 .photo1 {
@@ -52,6 +64,8 @@
 	clear: both;
 	padding: 0px;
 	margin: 0px;
+	display: flex;
+	flex-direction: row;
 }
 
 /*  COLUMN SETUP  */
@@ -75,16 +89,12 @@
 }
 
 /*  GRID OF THREE  */
-.span_3_of_3 {
+.span_2_of_2 {
 	width: 100%;
 }
 
-.span_2_of_3 {
-	width: 66.13%;
-}
-
-.span_1_of_3 {
-	width: 32.26%;
+.span_1_of_2 {
+	width: 48.13%;
 }
 
 /*  GO FULL WIDTH BELOW 768 PIXELS */
@@ -93,7 +103,7 @@
 		margin: 1% 0 1% 0%;
 	}
 	
-	.span_3_of_3, .span_2_of_3, .span_1_of_3 { 
+	.span_2_of_2, .span_1_of_2 { 
 		width: 100%;
 	}
 	
