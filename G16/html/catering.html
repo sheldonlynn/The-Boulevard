@@ -45,34 +45,32 @@
 									method="post" onsubmit="return validate()">
 
 										E-mail<br>
-										<input type="email" name="email" size="20" required /><br>
+										  <input type="email" name="email" size="20"
+											oninvalid="setCustomValidity('Please enter an email address')" required /><br>
 										First Name<br>
-										<input type="text" name="firstname"
-                                         pattern ="[A-Za-z]+" required /><br>
+										  <input type="text" name="firstname"
+                      pattern ="[A-Za-z]+" required /><br>
 										Last Name<br>
-										<input type="text" name="lastname"
-                                         pattern ="[A-Za-z]+" required /><br>
+  										<input type="text" name="lastname"
+                      pattern ="[A-Za-z]+" required /><br>
 										Address<br>
-										<input type="text" name="address" required /><br>
-
+										  <input type="text" name="address" pattern="/[a-zA-Z\-\s\d]*$/"/><br>
 										Postal Code<br>
-										<input type="text" name="postalcode" size ="6" maxlength="6"
-										 pattern="[a-zA-Z][1-9][a-zA-Z][1-9][a-zA-Z][1-9]" required /><br>
+										  <input type="text" name="postalcode" size ="6" maxlength="6"
+										  pattern="[a-zA-Z][1-9][a-zA-Z]?\s[1-9][a-zA-Z][1-9]" required /><br>
 										Phone Number<br>
-										<input type = "text" name = "phone0" maxlength="3" size="3"
-										pattern="[0-9]{3}" required /> -
-										<input type = "text" name = "phone1" maxlength="3" size="3"
-										pattern="[0-9]{3}" required /> -
-										<input type = "text" name = "phone2" maxlength="4" size="4"
-										pattern="[0-9]{4}" required /> <br>
-										Password<br>
-
-                                        Password<br>
-										<input type="password" name="password" size="11" required /><span class="pass-error"></span><br>
+											<input type = "text" name = "phone0" maxlength="3" size="3"
+										  pattern="[0-9]{3}" required /> -
+											<input type = "text" name = "phone1" maxlength="3" size="3"
+										  pattern="[0-9]{3}" required /> -
+											<input type = "text" name = "phone2" maxlength="4" size="4"
+										  pattern="[0-9]{4}" required /> <br>
+                    Password<br>
+											<input type="password" name="password" size="11" required /><span class="pass-error"></span><br>
 										Re-enter password<br>
-										<input type="password" name="rePassword" size="11" required /><span class="pass-error"></span>
-										<br><br>
-										<input type="submit" value="Sign Up"/>
+										  <input type="password" name="rePassword" size="11" required /><span class="pass-error"></span>
+										  <br><br>
+										  <input type="submit" value="Sign Up"/>
 									</form>
 							</div>
 							<div class="col span_1_of_2">
