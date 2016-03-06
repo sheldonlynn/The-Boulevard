@@ -41,7 +41,7 @@
 						<div class="section group">
 							<div class="col span_1_of_2">
 								<h3>Sign Up</h3>
-									<form name="sign up form" id="signUpForm" action="http://webdevfoundations.net/scripts/formdemo.asp" 
+									<form name="signUpForm" id="signUpForm" action="http://webdevfoundations.net/scripts/formdemo.asp" 
 									method="post" onsubmit="return validate()">
 
 										E-mail<br>
@@ -52,9 +52,9 @@
 										Last Name<br>
   										<input type="text" name="lastname" id="lastName" pattern ="[A-Za-z]+" required /><br>
 										Address<br>
-										  <input type="text" name="address" id="address" pattern="/[a-zA-Z\-\s\d]*$/"/><br>
+										  <input type="text" name="address" id="address" required/><br>
 										Postal Code<br>
-										  <input type="text" name="postalcode" id="postalCode" size ="6" maxlength="6"
+										  <input type="text" name="postalcode" id="postalCode" size ="7" maxlength="7"
 										  pattern="[a-zA-Z][1-9][a-zA-Z]?\s[1-9][a-zA-Z][1-9]" required /><br>
 										Phone Number<br>
 											<input type = "text" name = "phone0" id="phone0" maxlength="3" size="3"
@@ -73,7 +73,7 @@
 							</div>
 							<div class="col span_1_of_2">
 								<h3>Log-in</h3>
-									<form name="log in form" id="logInForm" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+									<form name="logInForm" id="logInForm" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
 									E-mail<br>
 									<input type="text" name="email" id="logInEmail" size="20" required /><br>
 									Password<br>

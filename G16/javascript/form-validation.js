@@ -1,10 +1,10 @@
 function validate(){
 /*
 	var email = document.forms["signUpForm"]["email"].value;
-	var fname = document.forms["signUpForm"]["firstname"].value;
-	var lname = document.forms["signUpForm"]["lastname"].value;
+	var fname = document.forms["signUpForm"]["firstName"].value;
+	var lname = document.forms["signUpForm"]["lastName"].value;
 	var address = document.forms["signUpForm"]["address"].value;
-	var postcode = document.forms["signUpForm"]["postalcode"].value;
+	var postcode = document.forms["signUpForm"]["postalCode"].value;
 	*/
 	var phone0 = document.forms["signUpForm"]["phone0"].value;
 	var phone1 = document.forms["signUpForm"]["phone1"].value;
@@ -13,8 +13,10 @@ function validate(){
 	var pass = document.forms["signUpForm"]["password"].value;
 	var rePass = document.forms["signUpForm"]["rePassword"].value;
 
-	if (testEmail() == false || testName() == false)
-		alert("Help");
+	if (testEmail() == false || testName() == false) {
+		alert("Invalid email address.");
+		return false;
+	}
 
 	if(pass != rePass) {
 		alert("Passwords do not match");
@@ -34,8 +36,8 @@ function testEmail() {
 }
 
 function testName() {
-	var fname = document.forms["signUpForm"]["firstname"].value;
-	var lname = document.forms["signUpForm"]["lastname"].value;
+	var fname = document.forms["signUpForm"]["firstName"].value;
+	var lname = document.forms["signUpForm"]["lastName"].value;
 	return ( (fname.length != 0) && (lname.length != 0) );
 }
 
@@ -49,7 +51,7 @@ function testAddress() {
 
 
 function testPostCode() {
-	var postcode = document.forms["signUpForm"]["postalcode"].value;
+	var postcode = document.forms["signUpForm"]["postalCode"].value;
 
 	
 }
@@ -79,7 +81,7 @@ function formvalidation(input) {
 
 //Makes the input capitalized
 function makeUpperCase() {
-    var pcode = document.forms["signUpForm"]["postalcode"].value;
+    var pcode = document.forms["signUpForm"]["postalCode"].value;
     pcode.value = pcode.value.toUpperCase();
 }
 
