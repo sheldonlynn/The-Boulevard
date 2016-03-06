@@ -44,6 +44,7 @@ function testAddress() {
 	var address = document.forms["signUpForm"]["address"].value;
 
 	// Regexp : /^V\d[A-Z\s?\d[A-Z]\d$/i
+	//     Or : /[a-zA-Z\-\s\d]*$/ for optional/numbers,letters, and - only
 }
 
 
@@ -65,6 +66,16 @@ function testPhone(num0,num1,num2) {
 		return false;
 }
 
+function formvalidation(input) {   
+		var letters = /^[0-9a-zA-Z]+$/;  //One or more letters/numbers
+		if(input.value.match(letters)) {  
+			return true;  
+		} else {  
+//		alert('User address must have alphanumeric characters only');  
+//  	input.focus();  
+			return false;  
+		}  
+}  
 
 //Makes the input capitalized
 function makeUpperCase() {
