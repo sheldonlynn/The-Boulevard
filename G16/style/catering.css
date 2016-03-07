@@ -19,14 +19,13 @@
 #catering-img {
     flex: 2;
     min-height: 100%;
-    background-image: url(../images/menudrink.jpg);
+    background-image: url(../images/catering.jpg);
     background-size: cover;
 }
 
 input{
 	margin-bottom: 0.5em;
     resize: both;
-    width: 100%;
 }
 
 .error {
