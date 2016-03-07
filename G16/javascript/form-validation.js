@@ -1,87 +1,204 @@
-function validate(){
-/*
-	var email = document.forms["signUpForm"]["email"].value;
-	var fname = document.forms["signUpForm"]["firstName"].value;
-	var lname = document.forms["signUpForm"]["lastName"].value;
-	var address = document.forms["signUpForm"]["address"].value;
-	var postcode = document.forms["signUpForm"]["postalCode"].value;
-	*/
-	var phone0 = document.forms["signUpForm"]["phone0"].value;
-	var phone1 = document.forms["signUpForm"]["phone1"].value;
-	var phone2 = document.forms["signUpForm"]["phone2"].value;
+/* FUNCTION TO GET ID FOR WRITING ERROR MESSAGES */
+function $(id) {
+	var element = document.getElementById(id);
+	return element;
+}
 
-	var pass = document.forms["signUpForm"]["password"].value;
-	var rePass = document.forms["signUpForm"]["rePassword"].value;
-
-	if (testEmail() == false || testName() == false) {
-		alert("Invalid email address.");
-		return false;
+/* MAIN FUNCTION FOR SIGN UP VALIDATION */
+function signUpValidate() {
+	var errors = [];
+	
+	if(!testSignUpEmail()) {
+		$("signup-email-error").innerHTML = "You must enter a valid email";
+		errors[errors.length] = "error";
+	}
+	else {
+		$("signup-email-error").innerHTML = "";
+	}
+	
+	if(testFirstName() == 1) {
+		$("fname-error").innerHTML = "You must enter your first name";
+		errors[errors.length] = "error";
+	}
+	else if(testFirstName() == 2) {
+		$("fname-error").innerHTML = "Your name can only contain alphabetic characters";
+		errors[errors.length] = "error";
+	}
+	else {
+		$("fname-error").innerHTML = "";
+	}
+	
+	if(testLastName() == 1) {
+		$("lname-error").innerHTML = "You must enter your last name";
+		errors[errors.length] = "error";
+	}
+	else if(testLastName() == 2) {
+		$("lname-error").innerHTML = "Your name can only contain alphabetic characters";
+		errors[errors.length] = "error";
+	}
+	else {
+		$("lname-error").innerHTML = "";
+	}
+	
+	if(!testAddress()) {
+		$("address-error").innerHTML = "You must enter a valid address";
+		errors[errors.length] = "error";
+	}
+	else {
+		$("address-error").innerHTML = "";
+	}
+	
+	if(!testPostalCode()) {
+		$("postalcode-error").innerHTML = "You must enter a valid Vancouver postal code";
+		errors[errors.length] = "error";
+	}
+	else {
+		$("postalcode-error").innerHTML = "";
+	}
+	
+	if(!testPhone()) {
+		$("phone-error").innerHTML = "You must enter a valid phone number";
+		errors[errors.length] = "error";
+	}
+	else {
+		$("phone-error").innerHTML = "";
 	}
 
-	if(pass != rePass) {
-		alert("Passwords do not match");
+	if(testSignUpPass() == 1) {
+		$("signup-pass-error").innerHTML = "You must enter a valid password (6-20 characters)";
+		errors[errors.length] = "error";
+	}
+	else if(testSignUpPass() == 2) {
+		$("signup-pass-error").innerHTML = "";
+		$("signup-repass-error").innerHTML = "Passwords do not match";
+		errors[errors.length] = "error";
+	}
+	else {
+		$("signup-pass-error").innerHTML = "";
+		$("signup-repass-error").innerHTML = "";
+	}
+	
+	if(errors.length > 0) {
+		return false;
+	}
+	
+	return true;
+}
+
+/* MAIN FUNCTION FOR LOG IN VALIDATION */
+function logInValidate() {
+	var errors = [];
+	
+	if(!testLogInEmail()) {
+		$("login-email-error").innerHTML = "You must enter a valid email";
+		errors[errors.length] = "error";
+	}
+	else {
+		$("login-email-error").innerHTML = "";
+	}
+	
+	if(!testLogInPass()) {
+		$("login-pass-error").innerHTML = "You must enter a valid password";
+		errors[errors.length] = "error";
+	}
+	else {
+		$("login-pass-error").innerHTML = "";
+	}
+	
+	if(errors.length > 0) {
 		return false;
 	}
 }
 
-
-
-function testEmail() {
-	var email = document.forms["signUpForm"]["email"].value;
-	if (email.length != 0) {
-		return (email.substring(email.length - 3) == "com" || email.substring(email.length - 2) == "ca" || email.substring(email.length - 3) == "org");
-	} else {
+/* MAIN FUNCTION FOR ORDER VALIDATION */
+function orderValidate() {
+	var order = document.forms["order-form"]["order"].value;
+	if(order.length == 0) {
+		$("order-error").innerHTML = "You must enter an order";
 		return false;
+	}
+	else {
+		$("order-error").innerHTML = "";
+		return true;
 	}
 }
 
-function testName() {
-	var fname = document.forms["signUpForm"]["firstName"].value;
-	var lname = document.forms["signUpForm"]["lastName"].value;
-	return ( (fname.length != 0) && (lname.length != 0) );
+/* TEST FUNCTIONS FOR SIGN UP VALIDATION */
+function testSignUpEmail() {
+	var email = document.forms["signup-form"]["signup-email"].value;
+	return ((email.substring(email.length - 4) == ".com" ||
+			email.substring(email.length - 3) == ".ca" ||
+			email.substring(email.length - 4) == ".org") &&
+			email.length != 0);
 }
 
+function testFirstName() {
+	var reg_fname = /^[A-Za-z\s]{1,40}$/;
+	var fname = document.forms["signup-form"]["firstname"].value;
+	if(fname.length == 0) {
+		return 1;
+	}
+	else if(!reg_fname.test(fname)) {
+		return 2;
+	}
+}
+
+function testLastName() {
+	var reg_lname = /^[A-Za-z\s]{1,40}$/;
+	var lname = document.forms["signup-form"]["lastname"].value;
+	if(lname.length == 0) {
+		return 1;
+	}
+	else if(!reg_lname.test(lname)) {
+		return 2;
+	}
+}
 
 function testAddress() {
-	var address = document.forms["signUpForm"]["address"].value;
-
-	// Regexp : /^V\d[A-Z\s?\d[A-Z]\d$/i
-	//     Or : /[a-zA-Z\-\s\d]*$/ for optional/numbers,letters, and - only
+	var reg_address = /^[a-z0-9\s,'-]{1,20}$/i;
+	var address = document.forms["signup-form"]["address"].value;
+	return reg_address.test(address);
 }
 
-
-function testPostCode() {
-	var postcode = document.forms["signUpForm"]["postalCode"].value;
-
-	
+function testPostalCode() {
+	var reg_pCode = /^V\d[A-Z]\s?\d[A-Z]\d$/i;
+	var pCode = document.forms["signup-form"]["postalcode"].value;
+	return reg_pCode.test(pCode);
 }
 
-function testPhone(num0,num1,num2) {
-
-	if (num0.length != 0 && num1.length != 0 && num2.length != 0) {
-		if ((100 <= num0 && num0 <= 999) && (100 <= num1 && num1 <= 999) &&
-			(0000 <= num2 && num2 <= 9999)) {
-			return false;
-		} else
-			return true;
-	} else
-		return false;
+function testPhone() {
+	var reg_phone0 = /^[1-9]{3}$/;
+	var reg_phone1 = /^[1-9]{3}$/;
+	var reg_phone2 = /^[0-9]{4}$/;
+	var phone0 = document.forms["signup-form"]["phone0"].value;
+	var phone1 = document.forms["signup-form"]["phone1"].value;
+	var phone2 = document.forms["signup-form"]["phone2"].value;
+	return reg_phone0.test(phone0) && reg_phone1.test(phone1) && reg_phone2.test(phone2);
 }
 
-function formvalidation(input) {   
-		var letters = /^[0-9a-zA-Z]+$/;  //One or more letters/numbers
-		if(input.value.match(letters)) {  
-			return true;  
-		} else {  
-//		alert('User address must have alphanumeric characters only');  
-//  	input.focus();  
-			return false;  
-		}  
-}  
-
-//Makes the input capitalized
-function makeUpperCase() {
-    var pcode = document.forms["signUpForm"]["postalCode"].value;
-    pcode.value = pcode.value.toUpperCase();
+function testSignUpPass() {
+	var reg_pass = /^[A-Za-z0-9!@#$%^&*_]{6,20}$/;
+	var pass = document.forms["signup-form"]["password"].value;
+	var rePass = document.forms["signup-form"]["repassword"].value;
+	if(!reg_pass.test(pass)) {
+		return 1;
+	}
+	else if(pass != rePass) {
+		return 2;
+	}
 }
 
+/* TEST FUNCTIONS FOR LOG IN VALIDATION */
+function testLogInEmail() {
+	var email = document.forms["login-form"]["email"].value;
+	return ((email.substring(email.length - 4) == ".com" ||
+			email.substring(email.length - 3) == ".ca" ||
+			email.substring(email.length - 4) == ".org") &&
+			email.length != 0);
+}
+
+function testLogInPass() {
+	var reg_pass = /^[A-Za-z0-9!@#$%^&*()_]{6,20}$/;
+	var pass = document.forms["login-form"]["password"].value;
+	return reg_pass.test(pass);
+}

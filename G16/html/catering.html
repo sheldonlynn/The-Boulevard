@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Catering</title>
 	<link rel="stylesheet" type="text/css" href="../style/base.css">
-	<link rel="stylesheet" type="text/css" href="../style/menu.css">
+	<link rel="stylesheet" type="text/css" href="../style/catering.css">
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
 </head>
@@ -36,91 +36,61 @@
 		<div class="content-container">
 			<div class="content">
 				<main>
-					<div id="menu-items">
-						<h2>Catering</h2>
-						<div class="section group">
-							<div class="col span_1_of_2">
-								<h3>Sign Up</h3>
-									<form name="signUpForm" id="signUpForm" action="http://webdevfoundations.net/scripts/formdemo.asp" 
-									method="post" onsubmit="return validate()">
-
-										E-mail<br>
-										  <input type="email" name="email" id="signUpEmail" size="20"
-											oninvalid="setCustomValidity('Please enter an email address')" required /><br>
-										First Name<br>
-										  <input type="text" name="firstname" id="firstName" pattern ="[A-Za-z]+" required /><br>
-										Last Name<br>
-  										<input type="text" name="lastname" id="lastName" pattern ="[A-Za-z]+" required /><br>
-										Address<br>
-										  <input type="text" name="address" id="address" required/><br>
-										Postal Code<br>
-										  <input type="text" name="postalcode" id="postalCode" size ="7" maxlength="7"
-										  pattern="[a-zA-Z][1-9][a-zA-Z]?\s[1-9][a-zA-Z][1-9]" required /><br>
-										Phone Number<br>
-											<input type = "text" name = "phone0" id="phone0" maxlength="3" size="3"
-										  pattern="[0-9]{3}" /> -
-											<input type = "text" name = "phone1" id="phone1" maxlength="3" size="3"
-										  pattern="[0-9]{3}" /> -
-											<input type = "text" name = "phone2" id="phone2" maxlength="4" size="4"
-										  pattern="[0-9]{4}" /> <br>
-										Password<br>
-											<input type="password" name="password" id="signUpPassword" size="11" required /><span class="pass-error"></span><br>
-										Re-enter password<br>
-										  <input type="password" name="rePassword" id="rePassword" size="11" required /><span class="pass-error"></span>
-										  <br><br>
-										  <input type="submit" value="Sign Up"/>
-									</form>
-							</div>
-							<div class="col span_1_of_2">
-								<h3>Log-in</h3>
-									<form name="logInForm" id="logInForm" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
-									E-mail<br>
-									<input type="text" name="email" id="logInEmail" size="20" required /><br>
-									Password<br>
-									<input type="password" name="password" id="logInPassword" required />
-									<br>
-									<br>
-									<input type="submit" value="Log In" />
-									</form>
-							</div>
-						</div>
-						<div class="section group">
-							<div class="col span_2_of_2">
-								<form   name="order form" id="orderForm" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
-									<h3>Your Order</h3>
-									<textarea rows="8" cols="40" name="order" id="order" placeholder="Enter your order" required></textarea>
-									<h3>Instructions</h3>
-									<textarea rows="6" cols="40" name="instructions" id="instructions" placeholder="Dietary restrictions/special requests"></textarea>
-									<br>
-									<input type="submit" value="Place Order" />
-								</form>
-							</div>
-						</div>
-					</div>
-					<div id="menu-img">
-						<table>
-							<tr>
-								<td>
-									<img src="../images/menudrink.jpg" alt="menu item" width="200" height="200" />
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<img src="../images/menudrink.jpg" alt="menu item" width="200" height="200" />
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<img src="../images/menudrink.jpg" alt="menu item" width="200" height="200" />
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<img src="../images/menudrink.jpg" alt="menu item" width="200" height="200" />
-								</td>
-							</tr>
-						</table>
-					</div>
+                    <div id="catering-flex">
+                        <div id="catering-form">
+                            <h2>Catering</h2>
+                            <div class="flex-row">
+                                <div id="sign-up">
+                                    <h3>Sign Up</h3>
+                                    <form name="signup-form" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return signUpValidate()">
+                                        E-mail<br>
+                                        <input type="email" id="signup-email" name="signup-email" size="20" /><div id="signup-email-error" class="error"></div><br>
+                                        First Name<br>
+                                        <input type="text" name="firstname" /><div id="fname-error" class="error"></div><br>
+                                        Last Name<br>
+                                        <input type="text" name="lastname" /><div id="lname-error" class="error"></div><br>
+                                        Address<br>
+                                        <input type="text" name="address" /><div id="address-error" class="error"></div><br>
+                                        Postal Code<br>
+                                        <input type="text" name="postalcode" size ="7" maxlength="7" /><div id="postalcode-error" class="error"></div><br>
+                                        Phone Number<br>
+                                        <input type ="text" name ="phone0" maxlength="3" size="3" /> -
+                                        <input type ="text" name ="phone1" maxlength="3" size="3" /> -
+                                        <input type ="text" name ="phone2" maxlength="4" size="4" /><div id="phone-error" class="error"></div><br>
+                                        Password<br>
+                                        <input type="password" name="password" size="11" /><div id="signup-pass-error" class="error"></div><br>
+                                        Re-enter password<br>
+                                        <input type="password" name="repassword" size="11" /><div id="signup-repass-error" class="error"></div>
+                                        <br><br>
+                                        <input type="submit" value="Sign Up" />
+                                    </form>
+                                </div>
+                                <div id="log-in">
+                                    <h3>Log-in</h3>
+                                    <form name="login-form" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return logInValidate()">
+                                        E-mail<br>
+                                        <input type="email" name="email" size="20" /><div id="login-email-error" class="error"></div><br>
+                                        Password<br>
+                                        <input type="password" name="password" /><div id="login-pass-error" class="error"></div>
+                                        <br><br>
+                                        <input type="submit" value="Log In" />
+                                    </form>
+                                </div>
+                            </div>
+                            <div id="order-info">
+                                <form name="order-form" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post"
+								onsubmit="return orderValidate()">
+                                    <h3>Your Order</h3>
+                                    <textarea rows="8" cols="40" name="order" placeholder="Enter your order" onblur="orderValidate()"></textarea><div id="order-error" class="error"></div>
+                                    <h3>Instructions</h3>
+                                    <textarea rows="6" cols="40" name="instructions" placeholder="Dietary restrictions/special requests"></textarea>
+                                    <br>
+                                    <input type="submit" value="Place Order" />
+                                </form>
+                            </div>
+                        </div>
+                        <div id="catering-img"></div>
+                    </div>
 				</main>
 				
 				<footer>
