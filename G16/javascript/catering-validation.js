@@ -155,7 +155,7 @@ function testLastName() {
 }
 
 function testAddress() {
-	var reg_address = /^[a-z0-9\s,'-]{1,20}$/i;
+	var reg_address = /^[a-z0-9\s,'-]{1,50}$/i;
 	var address = document.forms["signup-form"]["address"].value;
 	return reg_address.test(address);
 }

@@ -22,7 +22,6 @@
 }
 
 #input{
-	padding-top: 10px;
 	clear: both;
 }
 
@@ -32,6 +31,12 @@
 	width: 60em;
 	height: 40em;
 	border: 2px solid #49412C;
+}
+
+.error {
+	color: #FF0000;
+	font-size: 0.85em;
+	display: block;
 }
 
 /* END MAIN SECTION */
