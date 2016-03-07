@@ -13,12 +13,6 @@
 main img {
 	width: 100%;
 	height: auto;
-	padding: 2%;
-}
-
-/* Remove padding under images due to flexbox */
-main {
-	flex-grow: 0;
 }
 /* END MAIN SECTION
 
