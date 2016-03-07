@@ -23,16 +23,22 @@
     background-size: cover;
 }
 
-input{
-	margin-bottom: 0.5em;
-    resize: both;
-    width: 100%;
-}
-
 .error {
 	color: #FF0000;
 	font-size: 0.85em;
 	display: block;
+}
+
+input[type="submit"] {
+	margin-bottom: 0.5em;
+	resize: both;
+	width: 100%;
+}
+
+input[value="Place Order"] {
+	margin-bottom: 0.5em;
+	resize: both;
+	width: 20em;
 }
 
 /* REMOVE RIGHT IMAGE AT LESS THAN 1115 PIXELS */
@@ -53,7 +59,19 @@ input{
 		flex-direction: column;
 	}
   
-  #catering-flex {
-    text-align: center;
-  }
+	#catering-flex {
+		text-align: center;
+	}
+	
+	textarea {
+		width: 100%;
+	}
+	
+	input[name="phone0"], input[name="phone1"], input[name="phone2"] {
+		width: 30%;
+	}
+	
+	input, input[value="Place Order"] {
+		width: 100%;
+	}
 }
