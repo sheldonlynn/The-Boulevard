@@ -26,6 +26,7 @@
 input{
 	margin-bottom: 0.5em;
     resize: both;
+    width: 100%;
 }
 
 .error {
@@ -48,8 +49,11 @@ input{
 
 /* PUT LOG IN FORM UNDER SIGN UP FORM AT 600px */
 @media only screen and (max-width: 600px) {
-	
 	.flex-row {
 		flex-direction: column;
 	}
+  
+  #catering-flex {
+    text-align: center;
+  }
 }
