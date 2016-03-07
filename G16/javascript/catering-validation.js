@@ -125,7 +125,7 @@ function orderValidate() {
 
 /* TEST FUNCTIONS FOR SIGN UP VALIDATION */
 function testSignUpEmail() {
-	var email = document.forms["signup-form"]["signup-email"].value;
+	var email = document.forms["signup-form"]["email"].value;
 	return ((email.substring(email.length - 4) == ".com" ||
 			email.substring(email.length - 3) == ".ca" ||
 			email.substring(email.length - 4) == ".org") &&
@@ -167,8 +167,8 @@ function testPostalCode() {
 }
 
 function testPhone() {
-	var reg_phone0 = /^[1-9]{3}$/;
-	var reg_phone1 = /^[1-9]{3}$/;
+	var reg_phone0 = /^[1-9][0-9]{2}$/;
+	var reg_phone1 = /^[1-9][0-9]{2}$/;
 	var reg_phone2 = /^[0-9]{4}$/;
 	var phone0 = document.forms["signup-form"]["phone0"].value;
 	var phone1 = document.forms["signup-form"]["phone1"].value;
