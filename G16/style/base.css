@@ -173,6 +173,7 @@ h1 {
 main {
 	padding: .5em 1em .5em 1em;
 	flex: 1 0 auto;
+	flex-grow: 0;
 	background-color: #F9F0DF;
 }
 /* END MAIN SECTION */

@@ -23,11 +23,6 @@
     background-size: cover;
 }
 
-input{
-	margin-bottom: 0.5em;
-    resize: both;
-}
-
 .error {
 	color: #FF0000;
 	font-size: 0.85em;
@@ -35,13 +30,11 @@ input{
 }
 
 input[type="submit"] {
-	margin-bottom: 0.5em;
 	resize: both;
 	width: 100%;
 }
 
 input[value="Place Order"] {
-	margin-bottom: 0.5em;
 	resize: both;
 	width: 20em;
 }
