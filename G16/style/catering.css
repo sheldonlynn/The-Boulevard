@@ -23,14 +23,11 @@
     background-size: cover;
 }
 
-<<<<<<< HEAD
-=======
 input{
 	margin-bottom: 0.5em;
     resize: both;
 }
 
->>>>>>> origin/master
 .error {
 	color: #FF0000;
 	font-size: 0.85em;
