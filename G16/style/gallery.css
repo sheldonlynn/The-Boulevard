@@ -10,30 +10,67 @@
 /* END HEADER SECTION */
 
 /* MAIN CONTENT SECTION */
-#artist{
-	max-width: 70em;
-	margin: auto;
+main img {
+	width: 100%;
+	height: auto;
+	padding: 2%;
 }
 
-#artist img{
-	width: 20em;
-    float: right;
+/* Remove padding under images due to flexbox */
+main {
+	flex-grow: 0;
 }
 /* END MAIN SECTION
 
-/* CHANGES LAYOUT WHEN WIDTH BELOW 1000 PIXELS */
-@media only screen and (max-width: 768px) {
-	h3{
-		text-align: center;
-	}
-    
-	#artist p{
-		text-align: center;
+/* RESPONSIVE GRID */
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child {
+	margin-left: 0;
+}
+
+/*  GROUPING  */
+.group:before, .group:after {
+	content:"";
+	display:table; 
+}
+
+.group:after {
+	clear:both;
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+	width: 100%;
+}
+
+.span_2_of_3 {
+	width: 66.13%;
+}
+
+.span_1_of_3 {
+	width: 32.26%;
+}
+
+/* CHANGES THE RIGHT PIC WHEN WIDTH BELOW 1000 PIXELS */
+@media only screen and (max-width: 1000px) {
+	.col {
+		margin: 1% 0 1% 0%;
 	}
 	
-	#artist img{
-		display: block;
-        float: none;
-		margin: auto;
+	.col {
+		width: 100%;
 	}
 }
