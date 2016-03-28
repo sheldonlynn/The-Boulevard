@@ -56,20 +56,6 @@
 					<h1>Art Gallery</h1>
 				</header>
 				<main>
-					
-          <div class="slider">
-          <div class="banner">
-            <ul>
-              <li><img src="../images/art/paint.jpg"></li>
-              <li><img src="../images/art/atonement.jpg"></li>
-              <li><img src="../images/art/rorschach.jpg"></li>
-              <li><img src="../images/art/amy.jpg"></li>
-              <li><img src="../images/art/misc.jpg"></li>
-            </ul>
-          </div>
-          </div>
-          
-          
           <div class="section group">
 						<div class="col span_2_of_3">
 							<h3>Current Artist</h3>
@@ -81,6 +67,19 @@
 							</div>
 						</div>
 					</div>
+          <br>
+          <br>
+          <div class="slider">
+          <div class="banner">
+            <ul>
+              <li><img src="../images/art/paint.jpg"></li>
+              <li><img src="../images/art/atonement.jpg"></li>
+              <li><img src="../images/art/rorschach.jpg"></li>
+              <li><img src="../images/art/amy.jpg"></li>
+              <li><img src="../images/art/misc.jpg"></li>
+            </ul>
+          </div>
+          </div>
           
 				</main>
 			
