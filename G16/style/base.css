@@ -195,7 +195,7 @@ h1 {
 
 /* MAIN CONTENT SECTION */
 main {
-	padding: .5em 1em .5em 1em;
+	padding: 1em 2em 1em 2em;
 	flex: 1 0 auto;
 	flex-grow: 0;
 	background-color: #F9F0DF;
