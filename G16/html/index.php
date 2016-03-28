@@ -68,19 +68,19 @@
 					<div class="section group">
 						<div class="col span_1_of_3">
 							<p class="paragraph">We are a local grassroots business dedicated to great coffee. Located at the heart of UBC, we operate at the pace of university life – serving artisanal small batch coffee roasted weekly right here in the shop.</p>
-              <p class="paragraph">Whether it is for just a quick cuppa or for a sit-down, you will enjoy our bright and modern space that also serves as a gallery for local artists. Please come by at any time! You are among friends.</p>
-              <img src="../images/roaster.jpg" height="533" width="800" alt="photo" class="photo">
-						</div>
-						<div class="col span_1_of_3">
-              <img src="../images/latte.jpg" height="533" width="800" alt="photo" class="photo2">
-							<p class="paragraph">From green coffee bean to your cup, we put energy and love into every step of the way. Each batch of coffee is roasted weekly in our hand-built infrared roaster. The roaster fills the shop with lovely scents of caramel. It's pretty much magic!</p>
-              <p class="paragraph">With a PhD in Chemistry, master roaster John Chen has the experience and unique skillset to fully unlock the bouquet of dormant flavours within the raw bean, resulting in a nuanced and balanced cup that showcases the distinct single origin coffees that we carry.</p>
-              <img src="../images/beans.jpg" height="533" width="800" alt="photo" class="photo1">
-						</div>
-						<div class="col span_1_of_3">
-							<p class="paragraph">Our pastries and gourmet sandwiches and salads are lovingly crafted fresh in the kitchen daily. Come by in the morning and enjoy a cup of tea with a scone still warm from the oven.</p>
-              <p class="paragraph">Made solely from wholesome organic ingredients, our menu has many vegetarian and gluten free options. Our everyday approach to healthy and delicious food is the perfect complement for your lifestyle.</p>
-              <img src="../images/avocado.jpg" height="533" width="800" alt="photo" class="photo">
+							<p class="paragraph">Whether it is for just a quick cuppa or for a sit-down, you will enjoy our bright and modern space that also serves as a gallery for local artists. Please come by at any time! You are among friends.</p>
+							<img src="../images/roaster.jpg" height="533" width="800" alt="photo" class="photo">
+										</div>
+										<div class="col span_1_of_3">
+							<img src="../images/latte.jpg" height="533" width="800" alt="photo" class="photo2">
+											<p class="paragraph">From green coffee bean to your cup, we put energy and love into every step of the way. Each batch of coffee is roasted weekly in our hand-built infrared roaster. The roaster fills the shop with lovely scents of caramel. It's pretty much magic!</p>
+							<p class="paragraph">With a PhD in Chemistry, master roaster John Chen has the experience and unique skillset to fully unlock the bouquet of dormant flavours within the raw bean, resulting in a nuanced and balanced cup that showcases the distinct single origin coffees that we carry.</p>
+							<img src="../images/beans.jpg" height="533" width="800" alt="photo" class="photo1">
+										</div>
+										<div class="col span_1_of_3">
+										<p class="paragraph">Our pastries and gourmet sandwiches and salads are lovingly crafted fresh in the kitchen daily. Come by in the morning and enjoy a cup of tea with a scone still warm from the oven.</p>
+							<p class="paragraph">Made solely from wholesome organic ingredients, our menu has many vegetarian and gluten free options. Our everyday approach to healthy and delicious food is the perfect complement for your lifestyle.</p>
+							<img src="../images/avocado.jpg" height="533" width="800" alt="photo" class="photo">
 						</div>
 					</div>
 				</main>
