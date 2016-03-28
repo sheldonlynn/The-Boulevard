@@ -48,12 +48,18 @@ h4 {
 .item {
 	background: #f9f0df;
 	padding-bottom: .5em;
-	font-weight: bold
+	font-weight: bold;
 }
 
 textarea {
 	width: 95%;
 	max-width: 95%;
+}
+
+.error {
+	color: #FF0000;
+	font-size: 0.85em;
+	display: block;
 }
 
 /* END MAIN SECTION */
