@@ -118,7 +118,7 @@
 					</div>
 					<div id="input">
 						<h3>Questions/Comments</h3>
-						<form name="comments-form" action="../php/formmail.php" method="post" onsubmit="return validate()">
+						<form name="comments-form" action="formmail.php" method="post" onsubmit="return validate()">
 							<input type="hidden" name="recipients" value="g16comp1536@gmail.com" />
 							<input type="hidden" name="subject" value="Comments/Feedback" />
 							<input type="hidden" name="good_url" value="thankyou-contact.html" />
