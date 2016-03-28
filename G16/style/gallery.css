@@ -14,6 +14,10 @@ main img {
 	width: 100%;
 	height: auto;
 }
+
+main {
+  padding: 50px;
+}
 /* END MAIN SECTION
 
 /* RESPONSIVE GRID */

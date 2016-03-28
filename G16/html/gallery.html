@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="../style/gallery.css">
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../style/unslider.css">
+  <link rel="stylesheet" href="../style/unslider-dots.css">
 </head>
 <body>	
 	<div class="main-container">
@@ -41,7 +43,20 @@
 					<h1>Art Gallery</h1>
 				</header>
 				<main>
-					<div class="section group">
+					
+          <div class="slider">
+          <div class="banner">
+            <ul>
+              <li><img src="../images/art/atonement.jpg"></li>
+              <li><img src="../images/art/paint.jpg"></li>
+              <li><img src="../images/art/rorschach.jpg"></li>
+              <li><img src="../images/art/amy.jpg"></li>
+            </ul>
+          </div>
+          </div>
+          
+          
+          <div class="section group">
 						<div class="col span_2_of_3">
 							<h3>Current Artist</h3>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer iaculis tortor eu lorem ultricies mattis. Nunc sit amet malesuada augue. In dignissim mattis nisi, facilisis posuere lectus laoreet ac. Duis pellentesque rhoncus nunc. Vestibulum aliquet ligula mauris, vel ullamcorper ligula faucibus a. Sed id maximus est, sed dapibus urna. Nulla eu rhoncus diam. Donec pulvinar est ut augue malesuada luctus. Pellentesque maximus odio vel tincidunt venenatis. Aenean placerat purus sapien, ut ullamcorper felis bibendum et. Nunc fringilla vehicula libero sed blandit. Pellentesque eros urna, condimentum tempor finibus vitae, condimentum id dolor. Cras vehicula convallis neque, id pulvinar ipsum feugiat eu. Etiam et lacus justo. Sed et varius ex, vel posuere felis.
@@ -52,42 +67,7 @@
 							</div>
 						</div>
 					</div>
-					
-					<div class="section group">
-						<div class="col span_1_of_3">
-							<div class="pics">
-								<img src="../images/latte1.jpg" alt="artist picture">
-							</div>
-						</div>
-						<div class="col span_1_of_3">
-							<div class="pics">
-								<img src="../images/latte1.jpg" alt="artist picture">
-							</div>
-						</div>
-						<div class="col span_1_of_3">
-							<div class="pics">
-								<img src="../images/latte1.jpg" alt="artist picture">
-							</div>
-						</div>
-					</div>
-					
-					<div class="section group">
-						<div class="col span_1_of_3">
-							<div class="pics">
-								<img src="../images/latte1.jpg" alt="artist picture">
-							</div>
-						</div>
-						<div class="col span_1_of_3">
-							<div class="pics">
-								<img src="../images/latte1.jpg" alt="artist picture">
-							</div>
-						</div>
-						<div class="col span_1_of_3">
-							<div class="pics">
-								<img src="../images/latte1.jpg" alt="artist picture">
-							</div>
-						</div>
-					</div>
+          
 				</main>
 			
 				<footer>
@@ -196,5 +176,17 @@
 			</div>
 		</div>
 	</div>
+  
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="../javascript/unslider.js"></script>
+  <script>
+		jQuery(document).ready(function($) {
+			$('.banner').unslider();
+      infinite: true;
+      arrows: true;
+      dots: true;
+		});
+	</script>
+  
 </body>
 </html>
