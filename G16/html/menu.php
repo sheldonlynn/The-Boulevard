@@ -153,10 +153,7 @@
 									<dd>A delightful unique coffee that has a sparkling top end, but is surprisingly full bodied with bold earthy tones and lintering notes of butterscotch.</dd>
 								</dl>
 							</div>
-							<form name="order-form" action="../php/formmail.php" method="post" onsubmit="return orderValidate()">
-                                <input type="hidden" name="recipients" value="g16comp1536@gmail.com" />
-								<input type="hidden" name="subject" value="Catering Order" />
-								<input type="hidden" name="good_url" value="thankyou-order.php" />
+							<form name="order-form" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return orderValidate()">
 								<div class="col span_1_of_2">
 									<h3>Your Order</h3>
 									<textarea rows="8" name="order" placeholder="Enter your order" onblur="orderValidate()"></textarea><div id="order-error" class="error"></div>
