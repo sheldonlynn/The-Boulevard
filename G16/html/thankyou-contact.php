@@ -13,15 +13,13 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Contact</title>
+	<title>Home</title>
 	<link rel="stylesheet" type="text/css" href="../style/base.css">
-	<link rel="stylesheet" type="text/css" href="../style/contact.css">
-	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,300" rel="stylesheet" type="text/css">
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
-	<script src="../javascript/google-maps.js"></script>
+	<link rel="stylesheet" type="text/css" href="../style/sitemap.css">
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
 </head>
-<body>	
+<body>
 	<div class="main-container">
 		<nav class="nav-container">
 			<div class="spacer"></div>
@@ -63,75 +61,12 @@
 			<div class="content">
 				<header>
 					<div id="bg-header"></div>
-					<h1>Visit Us</h1>
+					<h1>Site Map</h1>
 				</header>
-				
 				<main>
-					<div class="flex-row">
-						<div class="flex-col">
-							<div id="location">
-								<h3>Location</h3>
-								<p>5970 University Boulevard</p>
-								<p>Vancouver, British Columbia</p>
-								<p>Canada V6T 1Z3</p>
-							</div>
-							<div id="contact-hours">
-								<h3>Hours</h3>
-								<table>
-									<tr>
-										<td>Monday</td>
-										<td>7am - 7pm</td>
-									</tr>
-									<tr>
-										<td>Tuesday</td>
-										<td>7am - 7pm</td>
-									</tr>
-									<tr>
-										<td>Wednesday</td>
-										<td>7am - 7pm</td>
-									</tr>
-									<tr>
-										<td>Thursday</td>
-										<td>7am - 7pm</td>
-									</tr>
-									<tr>
-										<td>Friday</td>
-										<td>7am - 7pm</td>
-									</tr>
-									<tr>
-										<td>Saturday</td>
-										<td>7am - 7pm</td>
-									</tr>
-									<tr>
-										<td>Sunday</td>
-										<td>8am - 6pm</td>
-									</tr>
-								</table>
-							</div>
-							<div id="contact-info">
-								<h3>Contact</h3>
-								<p>Telephone: 604.827.4488</p>
-								<p>Email: info@theboulevard.ca</p>
-							</div>
-						</div>
-						<div id="google-map"></div>
-					</div>
-					<div id="input">
-						<h3>Questions/Comments</h3>
-						<form name="comments-form" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return validate()">
-							<input type="hidden" name="recipients" value="g16comp1536@gmail.com" />
-							<input type="hidden" name="subject" value="Comments/Feedback" />
-							<input type="hidden" name="good_url" value="thankyou-contact.html" />
-							Name<br>
-							<input type="text" name="name"><div id="name-error" class="error"></div><br>
-							Email<br>
-							<input type="text" name="email"><div id="email-error" class="error"></div><br>
-							<textarea rows="6" cols="40" name="questions-comments"></textarea><div id="comments-error" class="error"></div><br><br>
-							<input type="submit" value="Submit">
-						</form>
-					</div>
+					<p>Thank you for your feedback and comments!</p>
 				</main>
-					
+			
 				<footer>
 					<div id="contact">
 						<div id="mobile-social">
@@ -233,6 +168,5 @@
 			</div>
 		</div>
 	</div>
-	<script src="../javascript/contact-validation.js"></script>
 </body>
 </html>
