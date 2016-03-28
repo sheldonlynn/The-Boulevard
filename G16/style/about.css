@@ -4,17 +4,23 @@
 	background-image: url(../images/barista.jpg);
 	background-position: 50% 50%;
 	background-size: cover;
-	width: auto;
-	height: 300px;
+}
+
+.photos {
+  height: 100%;
+  width: 100%;
+  resize: both;
 }
 
 .community-photo {
 	background-image: url(../images/latte.jpg);
 	background-position: 50% 50%;
 	background-size: cover;
-	width: auto;
-	height: 300px;
+	max-width: 100%;
+	height: auto%;
 }
+
+
 
 .community-photo2 {
 	display: none;
