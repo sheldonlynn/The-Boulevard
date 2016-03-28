@@ -13,7 +13,7 @@ html, body {
     margin: 0;
 	font-family: "Raleway", sans-serif;
 	color: #2F2724;
-	background-color: #49412C;
+	background-color: #43311C;
 }
 
 a {
@@ -50,7 +50,7 @@ h3 {
 .nav-container {
 	position: fixed;
 	height: 100%;
-    background-color: #49412C;
+    background-color: #43311C;
     width: 150px;
     display: flex;
     flex-direction: column;
@@ -108,18 +108,42 @@ h3 {
 #nav-links a {
 	display: block;
 	text-decoration: none;
-	color: #D9B678;
+	color: #E0C391;
 	padding-bottom: 5px;
-	border-bottom: 1px #D9B678 solid;
+	border-bottom: 1px #E0C391 solid;
 }
 
 #nav-links a:visited {
-	color: #D9B678;
+	color: #E0C391;
 }
 
-#nav-links a:hover{
+#nav-links a:hover {
 	color: #FFFFFF;
 	border-bottom: 1px #FFFFFF solid;
+}
+
+#login {
+	text-align: center;
+	font-size: .85em;
+	color: #E0C391;
+}
+
+#login li {
+	padding-bottom: 3px;
+	list-style-type: none;
+}
+
+#login a {
+	text-decoration: none;
+	color: #E0C391;
+}
+
+#login a:hover {
+	color: #FFFFFF;
+}
+
+#login a:visited {
+	color: #E0C391;
 }
 
 #social-links {
@@ -171,7 +195,7 @@ h1 {
 
 /* MAIN CONTENT SECTION */
 main {
-	padding: .5em 1em .5em 1em;
+	padding: 1em 2em 1em 2em;
 	flex: 1 0 auto;
 	flex-grow: 0;
 	background-color: #F9F0DF;
@@ -232,13 +256,13 @@ footer #address {
 /* RESIZE WIDTH FOR PHONE SCREEN*/
 @media screen and (max-width: 768px){
 	.main-container {
-		margin-top: 50px;
+		margin-top: 60px;
 	}
 	
 	.nav-container {
 		margin: 0;
 		top: 0;
-		height: 50px;
+		height: 60px;
 		width: 100%;
 		z-index: 1;
 	}
@@ -252,6 +276,7 @@ footer #address {
 	}
 	
 	#logo-link {
+		margin: 0 0 -15px 0;
 		width: 100%;
 	}
 	
@@ -276,6 +301,26 @@ footer #address {
 	
 	#nav-links a:hover {
 		border-bottom: 0;
+	}
+	
+	#login {
+		padding: 0;
+		width: 100%;
+		margin: auto;
+		margin-bottom: 15px;
+	}
+	
+	#login ul {
+		margin: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	#login li {
+		float: left;
+		margin-left: 0.5em;
+		margin-right: 0.5em;
 	}
 	
 	#social-links {
@@ -303,15 +348,15 @@ footer #address {
 }
 
 /* RESIZE NAV FOR SCREEN HEIGHT */
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 525px) {
 	.main-container {
-		margin-top: 50px;
+		margin-top: 60px;
 	}
 	
 	.nav-container {
 		margin: 0;
 		top: 0;
-		height: 50px;
+		height: 60px;
 		width: 100%;
 		z-index: 1;
 	}
@@ -325,6 +370,7 @@ footer #address {
 	}
 	
 	#logo-link {
+		margin: 0 0 -15px 0;
 		width: 100%;
 	}
 	
@@ -349,6 +395,26 @@ footer #address {
 	
 	#nav-links a:hover {
 		border-bottom: 0;
+	}
+	
+	#login {
+		padding: 0;
+		width: 100%;
+		margin: auto;
+		margin-bottom: 15px;
+	}
+	
+	#login ul {
+		margin: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	#login li {
+		float: left;
+		margin-left: 0.5em;
+		margin-right: 0.5em;
 	}
 	
 	#social-links {
