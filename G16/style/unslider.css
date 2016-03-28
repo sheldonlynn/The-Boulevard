@@ -58,6 +58,13 @@
   top: 50%;
 }
 
+.unslider-nav {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .unslider-arrow.next {
   right:5px;
 }
