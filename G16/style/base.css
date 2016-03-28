@@ -117,9 +117,29 @@ h3 {
 	color: #D9B678;
 }
 
-#nav-links a:hover{
+#nav-links a:hover {
 	color: #FFFFFF;
 	border-bottom: 1px #FFFFFF solid;
+}
+
+#login {
+	text-align: center;
+	font-size: .85em;
+	color: #D9B678;
+}
+
+#login li {
+	padding-bottom: 3px;
+	list-style-type: none;
+}
+
+#login a {
+	text-decoration: none;
+	color: #D9B678;
+}
+
+#login a:hover {
+	color: #FFFFFF;
 }
 
 #social-links {
@@ -232,13 +252,13 @@ footer #address {
 /* RESIZE WIDTH FOR PHONE SCREEN*/
 @media screen and (max-width: 768px){
 	.main-container {
-		margin-top: 50px;
+		margin-top: 60px;
 	}
 	
 	.nav-container {
 		margin: 0;
 		top: 0;
-		height: 50px;
+		height: 60px;
 		width: 100%;
 		z-index: 1;
 	}
@@ -252,6 +272,7 @@ footer #address {
 	}
 	
 	#logo-link {
+		margin: 0 0 -15px 0;
 		width: 100%;
 	}
 	
@@ -276,6 +297,26 @@ footer #address {
 	
 	#nav-links a:hover {
 		border-bottom: 0;
+	}
+	
+	#login {
+		padding: 0;
+		width: 100%;
+		margin: auto;
+		margin-bottom: 15px;
+	}
+	
+	#login ul {
+		margin: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	#login li {
+		float: left;
+		margin-left: 0.5em;
+		margin-right: 0.5em;
 	}
 	
 	#social-links {
@@ -303,15 +344,15 @@ footer #address {
 }
 
 /* RESIZE NAV FOR SCREEN HEIGHT */
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 525px) {
 	.main-container {
-		margin-top: 50px;
+		margin-top: 60px;
 	}
 	
 	.nav-container {
 		margin: 0;
 		top: 0;
-		height: 50px;
+		height: 60px;
 		width: 100%;
 		z-index: 1;
 	}
@@ -325,6 +366,7 @@ footer #address {
 	}
 	
 	#logo-link {
+		margin: 0 0 -15px 0;
 		width: 100%;
 	}
 	
@@ -349,6 +391,26 @@ footer #address {
 	
 	#nav-links a:hover {
 		border-bottom: 0;
+	}
+	
+	#login {
+		padding: 0;
+		width: 100%;
+		margin: auto;
+		margin-bottom: 15px;
+	}
+	
+	#login ul {
+		margin: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	#login li {
+		float: left;
+		margin-left: 0.5em;
+		margin-right: 0.5em;
 	}
 	
 	#social-links {

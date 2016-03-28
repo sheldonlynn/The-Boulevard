@@ -1,3 +1,14 @@
+<?php
+	include '../forum/functions.php';
+	require_once('../forum/config.php');
+	session_start();
+
+	// Connect to server and select database.
+	mysql_connect(DB_HOST, DB_USER, DB_PASSWORD)or die("cannot connect, error: ".mysql_error());
+	mysql_select_db(DB_DATABASE)or die("cannot select DB, error: ".mysql_error());
+	$tbl_name="topic"; // Table name
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -25,7 +36,21 @@
 						</ul>
 					</div>
 				</div>
-				<div class="spacer"></div>	
+				<div class="spacer"></div>
+				<div id="login">
+					<ul>
+					<?php
+						if (isLoggedIn()){
+							echo '<li><a href="../forum/logout.php">Logout</a></li>';
+							echo '<li><a href="../forum/forum.php">Go to forum</a></li>';
+							echo '<li><a href="../forum/add_topic_form.php">Create topic</a></li>';
+						} else {
+							echo '<li><a href="../forum/login_form.php">Login</a></li>';
+							echo '<li><a href="../forum/register_form.php">Sign Up</a></li>';
+						}
+					?>
+					</ul>
+				</div>
 				<div id="social-links">
 					<a href="https://www.facebook.com/BoulevardCoffeeRoasting" target="_blank"><img src="../images/fb.png" height="30" width="30" alt="facebook"></a>
 					<a href="https://twitter.com/blvdroastingco" target="_blank"><img src="../images/twitter.png" height="30" width="30" alt="twitter"></a>
