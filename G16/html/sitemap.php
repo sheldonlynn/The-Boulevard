@@ -39,7 +39,9 @@
 			<div id="login">
 				<ul>
 				<?php
+					$name = $_SESSION['SESS_FIRST_NAME'];
 					if (isLoggedIn()){
+						echo '<li class="welcome">Welcome, '.$name.'!</li>';
 						echo '<li><a href="../forum/logout.php">Logout</a></li>';
 						echo '<li><a href="../forum/forum.php">Go to forum</a></li>';
 						echo '<li><a href="../forum/add_topic_form.php">Create topic</a></li>';
@@ -65,13 +67,12 @@
 				</header>
 				<main>
 					<ul>
-						<li><a href="index.html">Index</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="menu.html">Menu</a></li>
-						<li><a href="catering.html">Catering</a></li>
-						<li><a href="gallery.html">Art</a></li>
-						<li><a href="contact.html">Contact</a></li>
-						<li><a href="sitemap.html">Site Map</a></li>
+						<li><a href="index.php">Index</a></li>
+						<li><a href="about.php">About</a></li>
+						<li><a href="menu.php">Menu</a></li>
+						<li><a href="gallery.php">Art</a></li>
+						<li><a href="contact.php">Contact</a></li>
+						<li><a href="sitemap.php">Site Map</a></li>
 					</ul>
 				</main>
 			
