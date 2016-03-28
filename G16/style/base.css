@@ -13,7 +13,7 @@ html, body {
     margin: 0;
 	font-family: "Raleway", sans-serif;
 	color: #2F2724;
-	background-color: #49412C;
+	background-color: #43311C;
 }
 
 a {
@@ -50,7 +50,7 @@ h3 {
 .nav-container {
 	position: fixed;
 	height: 100%;
-    background-color: #49412C;
+    background-color: #43311C;
     width: 150px;
     display: flex;
     flex-direction: column;
@@ -108,13 +108,13 @@ h3 {
 #nav-links a {
 	display: block;
 	text-decoration: none;
-	color: #D9B678;
+	color: #E0C391;
 	padding-bottom: 5px;
-	border-bottom: 1px #D9B678 solid;
+	border-bottom: 1px #E0C391 solid;
 }
 
 #nav-links a:visited {
-	color: #D9B678;
+	color: #E0C391;
 }
 
 #nav-links a:hover {
@@ -125,7 +125,7 @@ h3 {
 #login {
 	text-align: center;
 	font-size: .85em;
-	color: #D9B678;
+	color: #E0C391;
 }
 
 #login li {
@@ -135,11 +135,15 @@ h3 {
 
 #login a {
 	text-decoration: none;
-	color: #D9B678;
+	color: #E0C391;
 }
 
 #login a:hover {
 	color: #FFFFFF;
+}
+
+#login a:visited {
+	color: #E0C391;
 }
 
 #social-links {
