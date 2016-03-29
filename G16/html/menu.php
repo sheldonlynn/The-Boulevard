@@ -159,7 +159,7 @@
 						<table>
 							<tr>
 								<td>
-									<img src="../images/menudrink.jpg" alt="menu item" width="200" height="200">
+									<img src="../images/menucroissant.jpg" alt="menu item" width="200" height="200">
 								</td>
 							</tr>
 							<tr>
@@ -169,12 +169,12 @@
 							</tr>
 							<tr>
 								<td>
-									<img src="../images/menudrink.jpg" alt="menu item" width="200" height="200">
+									<img src="../images/menuscone.jpg" alt="menu item" width="200" height="200">
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<img src="../images/menudrink.jpg" alt="menu item" width="200" height="200">
+									<img src="../images/menucookie.jpg" alt="menu item" width="200" height="200">
 								</td>
 							</tr>
 						</table>
