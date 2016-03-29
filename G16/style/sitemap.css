@@ -1,6 +1,7 @@
 /* HTML ELEMENTS */
 main {
 	padding-left: 2em;
+	flex-grow: 1;
 }
 
 ul {

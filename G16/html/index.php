@@ -39,7 +39,9 @@
 			<div id="login">
 				<ul>
 				<?php
+					$name = $_SESSION['SESS_FIRST_NAME'];
 					if (isLoggedIn()){
+						echo '<li class="welcome">Welcome, '.$name.'!</li>';
 						echo '<li><a href="../forum/logout.php">Logout</a></li>';
 						echo '<li><a href="../forum/forum.php">Go to forum</a></li>';
 						echo '<li><a href="../forum/add_topic_form.php">Create topic</a></li>';

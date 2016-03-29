@@ -125,7 +125,6 @@ h3 {
 #login {
 	text-align: center;
 	font-size: .85em;
-	color: #E0C391;
 }
 
 #login li {
@@ -144,6 +143,10 @@ h3 {
 
 #login a:visited {
 	color: #E0C391;
+}
+
+.welcome {
+	color: #FFFFFF;
 }
 
 #social-links {
@@ -319,8 +322,8 @@ footer #address {
 	
 	#login li {
 		float: left;
-		margin-left: 0.5em;
-		margin-right: 0.5em;
+		margin-left: 1em;
+		margin-right: 1em;
 	}
 	
 	#social-links {
@@ -413,8 +416,8 @@ footer #address {
 	
 	#login li {
 		float: left;
-		margin-left: 0.5em;
-		margin-right: 0.5em;
+		margin-left: 1em;
+		margin-right: 1em;
 	}
 	
 	#social-links {

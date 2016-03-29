@@ -41,7 +41,9 @@
 			<div id="login">
 				<ul>
 				<?php
+					$name = $_SESSION['SESS_FIRST_NAME'];
 					if (isLoggedIn()){
+						echo '<li class="welcome">Welcome, '.$name.'!</li>';
 						echo '<li><a href="../forum/logout.php">Logout</a></li>';
 						echo '<li><a href="../forum/forum.php">Go to forum</a></li>';
 						echo '<li><a href="../forum/add_topic_form.php">Create topic</a></li>';
@@ -119,7 +121,6 @@
 					<div id="input">
 						<h3>Questions/Comments</h3>
 						<form name="comments-form" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return validate()">
-
 							Name<br>
 							<input type="text" name="name"><div id="name-error" class="error"></div><br>
 							Email<br>

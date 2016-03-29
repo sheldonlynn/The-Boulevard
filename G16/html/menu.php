@@ -18,8 +18,6 @@
 	<link rel="stylesheet" type="text/css" href="../style/menu.css">
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
-	<style>
-	</style>
 </head>
 <body>
 	<div class="main-container">
@@ -41,7 +39,9 @@
 			<div id="login">
 				<ul>
 				<?php
+					$name = $_SESSION['SESS_FIRST_NAME'];
 					if (isLoggedIn()){
+						echo '<li class="welcome">Welcome, '.$name.'!</li>';
 						echo '<li><a href="../forum/logout.php">Logout</a></li>';
 						echo '<li><a href="../forum/forum.php">Go to forum</a></li>';
 						echo '<li><a href="../forum/add_topic_form.php">Create topic</a></li>';
@@ -153,6 +153,19 @@
 									<dd>A delightful unique coffee that has a sparkling top end, but is surprisingly full bodied with bold earthy tones and lintering notes of butterscotch.</dd>
 								</dl>
 							</div>
+							<form name="order-form" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return orderValidate()">
+								<div class="col span_1_of_2">
+									<h3>Your Order</h3>
+									<textarea rows="8" name="order" placeholder="Enter your order" onblur="orderValidate()"></textarea><div id="order-error" class="error"></div>
+                                </div>
+								<div class="col span_1_of_2">
+									<h3>Instructions</h3>
+									<textarea rows="8" name="instructions" placeholder="Dietary restrictions/special requests"></textarea>
+                                </div>
+								<div class="col span_2_of_2">
+									<input type="submit" value="Place Order" />
+								</div>
+							</form>
 						</div>
 					</div>
 					<div id="menu-img">
@@ -282,5 +295,6 @@
 			</div>
 		</div>
 	</div>
+	<script src="../javascript/order-validation.js"></script>
 </body>
 </html>
