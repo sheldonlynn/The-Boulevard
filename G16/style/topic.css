@@ -1,0 +1,42 @@
+/* HTML ELEMENTS */
+main {
+	flex-grow: 1;
+}
+/* END HTML SECTION */
+
+/* VIEW RESPONSES */
+#topic {
+	margin-top: 3em;
+}
+
+#topic table{
+	margin: auto;
+	margin-bottom: 1em;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.view {
+	border: 1px solid #43311C;
+}
+/* END VIEW SECTION */
+
+/* RESPOND SECTION */
+#respond {
+	margin-top: 2em;
+}
+
+#respond table{
+	margin: auto;
+}
+
+#respond td {
+	vertical-align: middle;
+}
+
+#respond textarea {
+	resize: vertical;
+}
+/* END RESPOND SECTION */

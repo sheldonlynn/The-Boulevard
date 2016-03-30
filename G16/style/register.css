@@ -1,0 +1,27 @@
+/* HTML ELEMENTS */
+main {
+	flex-grow: 1;
+}
+/*END HTML SECTION */
+
+/* SIGN UP SECTION */
+#register {
+	margin-top: 3em;
+}
+
+#register table{
+	margin: auto;
+}
+
+#reg th {
+	padding-top: 0.5em;
+	padding-right: 0.5em;
+	text-align: right;
+	font-weight: bold;
+}
+
+#reg input[type="submit"] {
+	cursor: pointer;
+	margin-top: 0.5em;
+}
+/* END SIGN UP SECTION */

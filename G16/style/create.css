@@ -1,0 +1,36 @@
+/* HTML ELEMENTS */
+main {
+	flex-grow: 1;
+}
+/* END HTML SECTION */
+
+/* New topic form/table */
+#new-topic {
+	margin-top: 3em;
+}
+
+#new-topic table{
+	margin: auto;
+}
+
+#topic td {
+	padding-bottom: 0.5em;
+}
+
+#topic .header {
+	padding-bottom: 0;
+	font-weight: bold;
+}
+
+#topic input[type="submit"], #topic input[type="reset"] {
+	cursor: pointer;
+}
+
+#topic input {
+	font-weight: normal;
+}
+
+#topic textarea {
+	resize: vertical;
+	font-weight: normal;
+}

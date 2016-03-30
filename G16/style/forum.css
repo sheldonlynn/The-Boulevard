@@ -1,0 +1,33 @@
+
+/* TABLE OF TOPICS */
+#forum {
+	padding-top: 2em;
+}
+
+#topics {
+	border-collapse: collapse;
+	width: 100%;
+	margin: auto;
+}
+
+#topics td {
+	border: 1px solid #43311C;
+	padding: 0.2em 0.5em 0.2em 0.5em;
+}
+
+.outer {
+	font-weight: bold;
+	background-color: #43311C;
+	color: #E0C391;
+}
+
+/* NEW TOPIC BUTTON */
+#create-button td {
+	padding-bottom: 0.5em;
+	text-align: right;
+	border: 0;
+}
+
+#create-button input {
+    cursor: pointer;
+}

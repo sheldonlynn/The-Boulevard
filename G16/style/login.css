@@ -1,0 +1,27 @@
+/* HTML ELEMENTS */
+main {
+	flex-grow: 1;
+}
+/* END HTML SECTION */
+
+/*LOGIN SECTION */
+#login-sect {
+	margin-top: 3em;
+}
+
+#login-sect table {
+	margin: auto;
+}
+
+.header {
+	padding-top: 0.5em;
+	padding-right: 0.5em;
+	text-align: right;
+	font-weight: bold;
+}
+
+#sign-in input[type="submit"] {
+	cursor: pointer;
+	margin-top: 0.5em;
+}
+/* END LOGIN SECTION */

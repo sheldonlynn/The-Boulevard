@@ -12,7 +12,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 	<title>About</title>
 	<link rel="stylesheet" type="text/css" href="../style/base.css">
 	<link rel="stylesheet" type="text/css" href="../style/about.css">
@@ -107,7 +107,8 @@
 						<div id="address">
 							<p>The Boulevard Coffee Roasting Co.</p>
 							<p>5970 University Boulevard</p>
-							<p>Vancouver, British Columbia Canada V6T 1Z3</p>
+							<p>Vancouver, British Columbia</p>
+							<p>Canada V6T 1Z3</p>
 							<p>Telephone: 604.827.4488</p>
 							<p>Email: info@theboulevard.ca</p>
 						</div>
