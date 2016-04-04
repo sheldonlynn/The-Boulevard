@@ -17,6 +17,11 @@
 #menu-img img {
   width: 300px;
   height: auto;
+  padding-bottom: 5px;
+}
+
+#menu-img img:last-of-type {
+  padding-bottom: 0;
 }
 
 main {

@@ -6,7 +6,7 @@
   background-position: 50% 50%;
   background-size: cover;
   width: auto;
-  height: 400px;
+  height: 350px;
 }
 
 .photos {
@@ -20,7 +20,7 @@
   background-position: 50% 50%;
   background-size: cover;
   width: auto;
-  height: 400px;
+  height: 350px;
 }
 
 .community-photo2 {
@@ -29,10 +29,10 @@
 
 .environment-photo {
   background-image: url(../images/environment.jpg);
-  background-position: 50% 50%;
+  background-position: 50% bottom;
   background-size: cover;
   width: auto;
-  height: 400px;
+  height: 350px;
 }
 
 .photo1 {
@@ -64,6 +64,10 @@ p {
 
 h3 {
   margin-top: 0;
+}
+
+.boldtext {
+  font-weight: bolder;
 }
 
 
@@ -136,10 +140,10 @@ h3 {
   }
   .community-photo2 {
     display: block;
-    background-image: url(../images/latte.jpg);
+    background-image: url(../images/community.jpg);
     background-position: 50% 50%;
     background-size: cover;
     width: auto;
-    height: 400px;
+    height: 350px;
   }
 }
