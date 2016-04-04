@@ -3,11 +3,12 @@
 	margin-right: 300px;
 }
 
-#menu-img table {
+#menu-img{
 	position: absolute;
 	top: 0;
 	right: 0;
-	border-collapse: collapse;
+  display: flex;
+  
 }
 
 #menu-img img {
