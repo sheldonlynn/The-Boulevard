@@ -135,13 +135,13 @@
 										<dt><span class="item">Blackberry Soda (16oz) </span><span class="price">$2.86</span></dt>
 										<dd>The blacker the berry, the sweeter the juice.</dd>
 										<dt><span class="item">Frozen Mocha</span><span class="price">$4.52</span></dt>
-										<dd>Description of the item</dd>
+										<dd>Mocha & chill. A perfect blend of espresso and dark chocolate.</dd>
 										<dt><span class="item">Frozen After Eight Mocha</span><span class="price">$4.52</span></dt>
-										<dd>Description of the item</dd>
+										<dd>Mocha & chill & more chill. Same as above, except with peppermint.</dd>
 										<dt><span class="item">Frozen Vietnamese Latte</span><span class="price">$4.52</span></dt>
-										<dd>Description of the item</dd>
+										<dd>A heavenly blended beverage sweetened with condensed milk.</dd>
 										<dt><span class="item">Frozen Matcha</span><span class="price">$4.52</span></dt>
-										<dd>Description of the item</dd>
+										<dd>Green Power! Rev up your day with powerful antioxidants.</dd>
 									</dl>
 								</div>
 								<div class="col span_2_of_2">

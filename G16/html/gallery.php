@@ -70,8 +70,9 @@
 				<main>
 					<div class="section group">
 						<div class="col span_2_of_3">
-							<h3>Current Artist</h3>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer iaculis tortor eu lorem ultricies mattis. Nunc sit amet malesuada augue. In dignissim mattis nisi, facilisis posuere lectus laoreet ac. Duis pellentesque rhoncus nunc. Vestibulum aliquet ligula mauris, vel ullamcorper ligula faucibus a. Sed id maximus est, sed dapibus urna. Nulla eu rhoncus diam. Donec pulvinar est ut augue malesuada luctus. Pellentesque maximus odio vel tincidunt venenatis. Aenean placerat purus sapien, ut ullamcorper felis bibendum et. Nunc fringilla vehicula libero sed blandit. Pellentesque eros urna, condimentum tempor finibus vitae, condimentum id dolor. Cras vehicula convallis neque, id pulvinar ipsum feugiat eu. Etiam et lacus justo. Sed et varius ex, vel posuere felis.
+							<h3>Current Artist : Sheldon Lynn</h3>
+              <p>Sheldon is a Vancouver based multidisciplinary artist, photographer, and student.</p>
+              <p>With a varied range of interests, he aims to dabble in all aspects of creation and expression. By using the portrait as the focus in his art, he strives to tell a story, convey an emotion, and evoke a feeling, regardless of the medium he is working in.</p>
 						</div>
 						<div class="col span_1_of_3">
 							<div class="pics">
@@ -85,10 +86,11 @@
           <div class="banner">
             <ul>
               <li><img src="../images/art/paint.jpg"></li>
+              <li><img src="../images/art/womans.jpg"></li>
               <li><img src="../images/art/atonement.jpg"></li>
               <li><img src="../images/art/rorschach.jpg"></li>
               <li><img src="../images/art/amy.jpg"></li>
-              <li><img src="../images/art/misc.jpg"></li>
+              <li><img src="../images/art/digital.jpg"></li>
             </ul>
           </div>
           </div>
