@@ -2,11 +2,11 @@
 
 .about-photo {
   position: relative;
-	background-image: url(../images/barista.jpg);
-	background-position: 50% 50%;
-	background-size: cover;
-	width: auto;
-	height: 400px;
+  background-image: url(../images/barista.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  width: auto;
+  height: 400px;
 }
 
 .photos {
@@ -16,114 +16,130 @@
 }
 
 .community-photo {
-	background-image: url(../images/community.jpg);
-	background-position: 50% 50%;
-	background-size: cover;
-	width: auto;
-	height: 400px;
+  background-image: url(../images/community.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  width: auto;
+  height: 400px;
 }
 
-
-
 .community-photo2 {
-	display: none;
+  display: none;
 }
 
 .environment-photo {
-	background-image: url(../images/environment.jpg);
-	background-position: 50% 50%;
-	background-size: cover;
-	width: auto;
-	height: 400px;
+  background-image: url(../images/environment.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  width: auto;
+  height: 400px;
 }
 
 .photo1 {
-	padding-top: 2em;
-	height: 0;
-	width: 0;
-	display: none;
+  padding-top: 2em;
+  height: 0;
+  width: 0;
+  display: none;
 }
+
+
 /* END IMAGE SECTION */
 
 #bg-header {
-	background-image: url(../images/machine.jpg);
-	background-position: center center;
-	background-size: cover;
-	top: 0;
-	width: 100%;
-	height: 100%;
+  background-image: url(../images/machine.jpg);
+  background-position: center center;
+  background-size: cover;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
+
+
 /* END HEADER SECTION */
 
 p {
-    line-height: 200%;
+  line-height: 200%;
+  font-size: 0.9em;
 }
 
 h3 {
-    margin-top: 0;
+  margin-top: 0;
 }
+
 
 /* RESPONSIVE GRID */
+
+
 /*  SECTIONS  */
+
 .section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
+  clear: both;
+  padding: 0px;
+  margin: 0px;
 }
 
+
 /*  COLUMN SETUP  */
+
 .col {
-	display: block;
-	float:left;
-	margin: 1% 0 1% 1.6%;
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
 }
 
 .col:first-child {
-	margin-left: 0;
+  margin-left: 0;
 }
 
+
 /*  GROUPING  */
-.group:before, .group:after {
-	content:""; display:table;
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
 }
 
 .group:after {
-	clear:both;
+  clear: both;
 }
 
+
 /*  GRID OF THREE  */
+
 .span_3_of_3 {
-	width: 100%;
+  width: 100%;
 }
 
 .span_2_of_3 {
-	width: 66.13%;
+  width: 66.13%;
 }
 
 .span_1_of_3 {
-	width: 32.26%;
+  width: 32.26%;
 }
 
+
 /*  GO FULL WIDTH BELOW 768 PIXELS */
+
 @media only screen and (max-width: 768px) {
-	.col {
-		margin: 1% 0 1% 0%;
-	}
-	
-	.span_3_of_3, .span_2_of_3, .span_1_of_3 { 
-		width: 100%;
-	}
-	
-	.community-photo {
-		display: none;
-	}
-	
-	.community-photo2 {
-		display: block;
-		background-image: url(../images/latte.jpg);
-		background-position: 50% 50%;
-		background-size: cover;
-		width: auto;
-		height: 400px;
-	}
+  .col {
+    margin: 1% 0 1% 0%;
+  }
+  .span_3_of_3,
+  .span_2_of_3,
+  .span_1_of_3 {
+    width: 100%;
+  }
+  .community-photo {
+    display: none;
+  }
+  .community-photo2 {
+    display: block;
+    background-image: url(../images/latte.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    width: auto;
+    height: 400px;
+  }
 }
