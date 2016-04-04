@@ -43,6 +43,17 @@ dt.coffees {
 dd {
 	margin-top: .8em;
 	margin-bottom: .8em;
+  font-size: 0.9em;
+  line-height: 160%;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-top: 0;
 }
 
 input{
