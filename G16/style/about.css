@@ -57,7 +57,7 @@
 
 /* END HEADER SECTION */
 
-p {
+main p {
   line-height: 200%;
   font-size: 0.9em;
 }
