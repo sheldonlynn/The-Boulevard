@@ -127,23 +127,28 @@ h3 {
 /*  GO FULL WIDTH BELOW 768 PIXELS */
 
 @media only screen and (max-width: 768px) {
-  .col {
-    margin: 1% 0 1% 0%;
-  }
-  .span_3_of_3,
-  .span_2_of_3,
-  .span_1_of_3 {
-    width: 100%;
-  }
-  .community-photo {
-    display: none;
-  }
-  .community-photo2 {
-    display: block;
-    background-image: url(../images/community.jpg);
-    background-position: 50% 50%;
-    background-size: cover;
-    width: auto;
-    height: 350px;
-  }
+	main {
+		text-align: center;
+	}
+	
+	.col {
+		margin: 1% 0 1% 0%;
+	}
+	
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 {
+		width: 100%;
+	}
+	
+	.community-photo {
+		display: none;
+	}
+	
+	.community-photo2 {
+		display: block;
+		background-image: url(../images/community.jpg);
+		background-position: 50% 50%;
+		background-size: cover;
+		width: auto;
+		height: 350px;
+	}
 }

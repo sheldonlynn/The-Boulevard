@@ -39,4 +39,9 @@ main {
 #respond textarea {
 	resize: vertical;
 }
+
+#responderr {
+	margin-top: 1em;
+	text-align: center;
+}
 /* END RESPOND SECTION */

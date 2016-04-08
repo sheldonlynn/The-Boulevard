@@ -61,6 +61,10 @@ main img {
 
 /* CHANGES THE RIGHT PIC WHEN WIDTH BELOW 1000 PIXELS */
 @media only screen and (max-width: 1000px) {
+	main {
+		text-align: center;
+	}
+	
 	.col {
 		margin: 1% 0 1% 0%;
 	}

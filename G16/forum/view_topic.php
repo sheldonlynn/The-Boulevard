@@ -67,7 +67,7 @@
 						// get value of id that sent from address bar
 						$id=$_GET['id'];
 
-						$sql="SELECT * FROM $tbl_name WHERE id='$id'";
+						$sql="SELECT * FROM $tbl_name JOIN members ON members.member_id = topic.member_id AND id='$id'";
 						$result=mysql_query($sql);
 
 						$rows=mysql_fetch_array($result);
@@ -85,7 +85,7 @@
 									</tr>
 
 									<tr>
-										<td class="bold">By : </td>
+										<td><span class="bold">By :</span> <?php echo $rows['firstname'].' '.$rows['lastname']; ?></td>
 									</tr>
 
 									<tr>
@@ -98,7 +98,7 @@
 						<?php
 							$tbl_name2="response"; // Switch to table "response"
 
-							$sql2="SELECT * FROM $tbl_name2 WHERE topic_id='$id'";
+							$sql2="SELECT * FROM $tbl_name2 JOIN members ON members.member_id = response.member_id AND topic_id='$id'";
 							$result2=mysql_query($sql2);
 
 							while($rows=mysql_fetch_array($result2)){
@@ -114,7 +114,7 @@
 									<tr>
 										<td class="bold">Name</td>
 										<td class="bold">:</td>
-										<td></td>
+										<td><?php echo $rows['firstname'].' '.$rows['lastname']; ?></td>
 									</tr>
 									<tr>
 										<td class="bold">Response</td>
@@ -135,30 +135,37 @@
 						mysql_close();
 						?>
 					</div>
-					<div id="respond">
-						<table>
-							<tr>
-								<form name="form1" method="post" action="add_response.php">
-									<td>
-										<table>
-											<tr>
-												<td class="bold">Response:</td>
-												<td>&nbsp;</td>
-											</tr>
-											<tr>
-												<td><textarea name="response" cols="40" rows="3" id="answer"></textarea></td>
-												<td>&nbsp;</td>
-											</tr>
-											<tr>
-												<td><input type="submit" name="Submit" value="Submit"> <input type="reset" name="Submit2" value="Reset"></td>
-												<td><input name="id" type="hidden" value="<?php echo $id; ?>"></td>
-											</tr>
-										</table>
-									</td>
-								</form>
-							</tr>
-						</table>
-					</div>
+					<?php
+						if(isLoggedIn()) {
+							echo '<div id="respond">
+								<table>
+									<tr>
+										<form name="form1" method="post" action="add_response.php">
+											<td>
+												<table>
+													<tr>
+														<td class="bold">Response:</td>
+														<td>&nbsp;</td>
+													</tr>
+													<tr>
+														<td><textarea name="response" cols="40" rows="3" id="answer"></textarea></td>
+														<td>&nbsp;</td>
+													</tr>
+													<tr>
+														<td><input type="submit" name="Submit" value="Submit"> <input type="reset" name="Submit2" value="Reset"></td>
+														<td><input name="id" type="hidden" value="<?php echo $id; ?>"></td>
+													</tr>
+												</table>
+											</td>
+										</form>
+									</tr>
+								</table>
+							</div>';
+						}
+						else {
+							echo '<div id="responderr">You must be logged in to respond.</div>';
+						}
+					?>
 				</main>
 			
 				<footer>
