@@ -95,20 +95,20 @@ h3 {
 		width: 100%;
 	}
 	
-  .paragraph {
-    margin: 20px;
-    text-align: center;
-  }
+	.paragraph {
+		margin: 20px;
+		text-align: center;
+	}
   
-  .photo {
-    width: 80%;
-    display: block;
-    height: auto;
-    margin: auto;
-  }
+	.photo {
+		width: 100%;
+		display: block;
+		height: auto;
+		margin: auto;
+	}
 	.photo1 {
-		width: 80%;
-    height: auto;
+		width: 100%;
+		height: auto;
 		margin: auto;
 		display: block;
 	}

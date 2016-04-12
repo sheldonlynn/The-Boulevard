@@ -138,7 +138,7 @@ h3 {
 }
 
 #login a:hover {
-	color: #FFFFFF;
+	color: #FFFFFF !important;
 }
 
 #login a:visited {
@@ -422,5 +422,10 @@ footer #address {
 	
 	#social-links {
 		display: none;
+	}
+	
+	#mobile-social img{
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 }
